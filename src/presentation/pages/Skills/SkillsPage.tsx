@@ -2,11 +2,15 @@ import LogoCarousel from "../../components/LogoCarousel";
 
 export default function SkillsPage() {
     return (
-        <section className="w-full px-4 py-16 bg-background text-foreground">
-            <div className="max-w-6xl mx-auto text-center">
-                <h2 className="text-4xl font-bold mb-12">Skills</h2>
-                <LogoCarousel />
+        <section className="w-full px-0 py-16 bg-[#EDEDEC] text-foreground">
+            {/* Título centrado, con max-w */}
+            <div className="max-w-6xl mx-auto px-4 text-center mb-12">
+                <h2 className="text-4xl font-bold">Skills</h2>
             </div>
+
+            {/* Carousel full width */}
+            <LogoCarousel />
         </section>
+
     );
 }
