@@ -1,6 +1,6 @@
 export default function AboutPage() {
     return (
-        <section className="w-full px-4 py-16 bg-[#F7F7F7] text-foreground">
+        <section className="w-full px-4 py-16 bg-[#F4F4F3] text-foreground">
             <div className="max-w-6xl mx-auto flex flex-col gap-12">
                 {/* Título central */}
                 <h2 className="text-4xl font-bold text-center">About Me</h2>
@@ -31,7 +31,7 @@ export default function AboutPage() {
                         <img
                             src="/about-img.jpeg"
                             alt="Diego Bottegoni"
-                            className="rounded-2xl w-72 h-96 object-cover shadow-lg"
+                            className="rounded-2xl w-92 h-128 object-cover shadow-lg"
                         />
                     </div>
                 </div>

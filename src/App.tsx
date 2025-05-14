@@ -1,6 +1,7 @@
 import Hero from "./components/Hero/Hero"
 import Navbar from "./components/Navbar/Navbar"
 import AboutPage from "./presentation/pages/About/About"
+import BannerSection from "./presentation/pages/Banner/BannerSection"
 import SkillsPage from "./presentation/pages/Skills/SkillsPage"
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Hero />
       <SkillsPage />
       <AboutPage />
+      <BannerSection />
     </>
   )
 }
