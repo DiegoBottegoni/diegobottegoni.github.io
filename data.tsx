@@ -99,15 +99,15 @@ export const projects = [
     title: "grocery bud",
     text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.",
   },
-  {
-    id: nanoid(),
-    img: "https://images.pexels.com/photos/12883026/pexels-photo-12883026.jpeg?auto=compress&cs=tinysrgb&w=800",
-    url: "https://009-color-generator.netlify.app/",
-    github:
-      "https://github.com/DiegoBottegoni/react-course-projects/tree/main/09-color-generator",
-    title: "color generator",
-    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.",
-  },
+  // {
+  //   id: nanoid(),
+  //   img: "https://images.pexels.com/photos/12883026/pexels-photo-12883026.jpeg?auto=compress&cs=tinysrgb&w=800",
+  //   url: "https://009-color-generator.netlify.app/",
+  //   github:
+  //     "https://github.com/DiegoBottegoni/react-course-projects/tree/main/09-color-generator",
+  //   title: "color generator",
+  //   text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.",
+  // },
   // {
   //   id: nanoid(),
   //   img: "https://images.pexels.com/photos/12883026/pexels-photo-12883026.jpeg?auto=compress&cs=tinysrgb&w=800",
