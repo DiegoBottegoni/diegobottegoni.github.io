@@ -1,6 +1,6 @@
 export default function AboutPage() {
     return (
-        <section className="w-full px-4 py-16 bg-[#F4F4F3] text-foreground">
+        <section id="about" className="w-full px-4 py-16 bg-[#F4F4F3] text-foreground">
             <div className="max-w-6xl mx-auto flex flex-col gap-12">
                 {/* Título central */}
                 <h2 className="text-4xl font-bold text-center">About Me</h2>

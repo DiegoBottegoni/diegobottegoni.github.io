@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 
 const ContactSection = () => {
     return (
-        <section className="w-full bg-[#F4F4F3] py-20 text-center px-4">
+        <section id="contact" className="w-full bg-[#F4F4F3] py-20 text-center px-4">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
                 Let’s work together
             </h1>
