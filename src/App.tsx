@@ -6,6 +6,7 @@ import AboutPage from "./presentation/pages/About/About"
 import BannerSection from "./presentation/pages/Banner/BannerSection"
 import PeopleTalkPage from "./presentation/pages/PeopleTalk/PeopleTalkPage"
 import SkillsPage from "./presentation/pages/Skills/SkillsPage"
+import ContactSection from "./presentation/pages/Contact/ContactSection";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <BannerSection />
       <ProjectPage />
       <PeopleTalkPage />
+      <ContactSection />
     </>
   )
 }
