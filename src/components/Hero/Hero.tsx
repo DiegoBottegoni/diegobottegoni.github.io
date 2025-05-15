@@ -1,6 +1,6 @@
 const Hero = () => {
     return (
-        <section id="home" className="bg-[#F4F4F3] text-center py-20">
+        <section className="bg-[#F4F4F3] text-center py-20">
             <h1 className="text-6xl sm:text-9xl font-bold tracking-widest">
                 DIEGO
                 <br />

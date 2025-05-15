@@ -18,13 +18,10 @@ const ScrollToTopButton = () => {
         return () => window.removeEventListener("scroll", toggleVisibility);
     }, []);
 
-    // Scroll suave al home
     const scrollToTop = () => {
-        const homeSection = document.getElementById("home");
-        if (homeSection) {
-            homeSection.scrollIntoView({ behavior: "smooth" });
-        }
+        window.scrollTo({ top: 0, behavior: "smooth" });
     };
+
 
     if (!visible) return null;
 
