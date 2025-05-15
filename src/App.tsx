@@ -8,6 +8,7 @@ import PeopleTalkPage from "./presentation/pages/PeopleTalk/PeopleTalkPage"
 import SkillsPage from "./presentation/pages/Skills/SkillsPage"
 import ContactSection from "./presentation/pages/Contact/ContactSection";
 import Footer from "./presentation/components/Footer/Footer";
+import ScrollToTopButton from "./presentation/components/ScrollToTopButton";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <PeopleTalkPage />
       <ContactSection />
       <Footer />
+      <ScrollToTopButton />
     </>
   )
 }
