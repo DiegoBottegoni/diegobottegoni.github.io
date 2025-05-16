@@ -13,7 +13,7 @@ export default function BannerSection() {
 
             {/* Cinta de abajo: blanca con letras negras */}
             <BannerTape
-                text="BUILDING COOL STUFF / JAVASCRIPT LOVER /"
+                text="BUILDING COOL STUFF / TYPESCRIPT LOVER /"
                 backgroundColor="#FFFFFF"
                 textColor="#000000"
                 angle={3}

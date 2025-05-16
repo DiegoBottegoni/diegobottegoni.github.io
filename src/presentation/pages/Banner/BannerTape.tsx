@@ -1,44 +1,3 @@
-// import { motion } from "framer-motion";
-
-// interface BannerTapeProps {
-//   text: string;
-//   backgroundColor?: string;
-//   textColor?: string;
-//   reverse?: boolean;
-// }
-
-// export default function BannerTape({
-//   text,
-//   backgroundColor = "#000000",
-//   textColor = "#FFFFFF",
-//   reverse = false,
-// }: BannerTapeProps) {
-//   return (
-//     <div
-//       className="overflow-hidden w-full py-2 rotate-[-2deg] md:rotate-[-3deg]"
-//       style={{ backgroundColor }}
-//     >
-//       <motion.div
-//         className="whitespace-nowrap flex gap-8 animate-scroll"
-//         style={{
-//           animationDirection: reverse ? "reverse" : "normal",
-//         }}
-//       >
-//         {Array(10)
-//           .fill(text)
-//           .map((t, i) => (
-//             <span
-//               key={i}
-//               className="text-2xl md:text-3xl font-bold uppercase"
-//               style={{ color: textColor }}
-//             >
-//               {t}
-//             </span>
-//           ))}
-//       </motion.div>
-//     </div>
-//   );
-// }
 import { motion } from "framer-motion";
 
 interface BannerTapeProps {
@@ -46,7 +5,7 @@ interface BannerTapeProps {
   backgroundColor?: string;
   textColor?: string;
   reverse?: boolean;
-  angle?: number; // controla la inclinación
+  angle?: number;
 }
 
 export default function BannerTape({

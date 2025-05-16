@@ -1,6 +1,8 @@
 const Hero = () => {
     return (
-        <section className="bg-[#F4F4F3] text-center py-20">
+        // <section className="bg-[#F4F4F3] min-h-[calc(100vh-64px)] text-center py-20">
+        <section className="bg-[#F4F4F3] text-center  min-h-[calc(100vh-64px)] flex flex-col items-center justify-center">
+
             <h1 className="text-6xl sm:text-9xl font-bold tracking-widest">
                 DIEGO
                 <br />

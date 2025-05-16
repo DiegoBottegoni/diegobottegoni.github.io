@@ -6,7 +6,7 @@ const ScrollToTopButton = () => {
 
     // Mostrar botón cuando scrollY > 300px (podés ajustar)
     const toggleVisibility = () => {
-        if (window.pageYOffset > 300) {
+        if (window.pageYOffset > 200) {
             setVisible(true);
         } else {
             setVisible(false);
