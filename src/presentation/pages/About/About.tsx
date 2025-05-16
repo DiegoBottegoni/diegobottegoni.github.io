@@ -1,9 +1,9 @@
 export default function AboutPage() {
     return (
-        <section id="about" className="w-full px-4 py-16 bg-[#F4F4F3] text-foreground">
+        <section id="about" className="w-full px-4 py-24 bg-[#F4F4F3] text-foreground">
             <div className="max-w-6xl mx-auto flex flex-col gap-12">
                 {/* Título central */}
-                <h2 className="text-4xl font-bold text-center">About Me</h2>
+                <h2 className="text-4xl font-bold text-center pb-8">About Me</h2>
 
                 {/* Contenido en dos columnas */}
                 <div className="flex flex-col md:flex-row items-start gap-12">
@@ -18,7 +18,7 @@ export default function AboutPage() {
                         </p>
 
                         {/* Texto inferior */}
-                        <div className="mt-12">
+                        <div className="mt-82">
                             <h3 className="text-2xl font-semibold mb-2">What I offer</h3>
                             <p className="text-lg text-muted-foreground">
                                 Web development · App development · UI Implementation (to be defined)
@@ -31,7 +31,7 @@ export default function AboutPage() {
                         <img
                             src="/about-img.jpeg"
                             alt="Diego Bottegoni"
-                            className="rounded-2xl w-92 h-128 object-cover shadow-lg"
+                            className="rounded-2xl w-92 h-140 object-cover shadow-lg"
                         />
                     </div>
                 </div>

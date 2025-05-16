@@ -28,7 +28,7 @@ function NextArrow({ onClick, style }: ArrowProps) {
         <button
             onClick={onClick}
             style={style}
-            className={` z-10 text-4xl text-gray-600 hover:text-black absolute right-4 top-1/2 -translate-y-1/2`}
+            className="z-10 text-4xl text-gray-600 hover:text-black absolute right-4 top-1/2 -translate-y-1/2"
         >
             <FiChevronRight />
         </button>
@@ -40,7 +40,7 @@ function PrevArrow({ onClick, style }: ArrowProps) {
         <button
             onClick={onClick}
             style={style}
-            className={` z-10 text-4xl text-gray-600 hover:text-black absolute left-4 top-1/2 -translate-y-1/2`}
+            className="z-10 text-4xl text-gray-600 hover:text-black absolute left-4 top-1/2 -translate-y-1/2"
         >
             <FiChevronLeft />
         </button>
@@ -49,7 +49,7 @@ function PrevArrow({ onClick, style }: ArrowProps) {
 
 const PeopleTalkPage = () => {
     const sliderSettings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         autoplay: true,
@@ -63,15 +63,22 @@ const PeopleTalkPage = () => {
     };
 
     return (
-        <section className="w-screen h-screen bg-[#EDEDEC] text-gray-900 flex flex-col overflow-hidden">
-            <h2 className="text-center text-4xl font-bold pt-10">"La gente anda diciendo"</h2>
+        <section className="w-screen h-screen bg-[#EDEDEC] text-gray-900 flex flex-col py-24 overflow-hidden">
+            <h2 className="text-center text-4xl font-bold uppercase mb-60">
+                La gente anda diciendo
+            </h2>
+
             <div className="relative flex-1">
-                <Slider {...sliderSettings} className="relative">
+                <Slider {...sliderSettings} className="relative h-30">
                     {testimonies.map((item, index) => (
-                        <div key={index}>
-                            <div className="w-screen h-[calc(100vh-80px)] flex flex-col justify-center items-center px-8 text-center">
-                                <p className="text-xl md:text-2xl max-w-3xl italic mb-6">"{item.text}"</p>
-                                <span className="text-lg font-semibold text-gray-600">— {item.author}</span>
+                        <div key={index} className="h-full w-full">
+                            <div className="grid grid-rows-[1fr_auto] place-items-center h-full text-center px-8">
+                                <p className="text-xl md:text-2xl max-w-3xl italic">
+                                    "{item.text}"
+                                </p>
+                                <span className="text-lg font-semibold text-gray-600 mt-12">
+                                    — {item.author}
+                                </span>
                             </div>
                         </div>
                     ))}
