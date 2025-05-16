@@ -1,3 +1,6 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
 @import "tailwindcss";
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
@@ -12,7 +15,20 @@
   .scrollbar-hide::-webkit-scrollbar {
     display: none;  /* Ocultar barra en Chrome, Safari y Opera */
   }
+  .font-geist {
+    font-family: 'Geist', sans-serif;
+  }
 }
+@layer base {
+  :root {
+    --font-geist: 'Geist', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-geist);
+  }
+}
+
 
 @keyframes scroll {
   0% {

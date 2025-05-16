@@ -3,7 +3,7 @@ const Hero = () => {
         // <section className="bg-[#F4F4F3] min-h-[calc(100vh-64px)] text-center py-20">
         <section className="bg-[#F4F4F3] text-center min-h-[calc(100vh-64px)] flex flex-col items-center justify-center p-16">
 
-            <h1 className="text-6xl sm:text-9xl font-bold tracking-widest">
+            <h1 className="text-6xl sm:text-9xl font-bold ">
                 DIEGO
                 <br />
                 BOTTEGONI
