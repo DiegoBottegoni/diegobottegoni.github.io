@@ -27,7 +27,8 @@
   animation: scroll 20s linear infinite;
 }
 
-html {
+html, body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 

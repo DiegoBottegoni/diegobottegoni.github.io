@@ -12,7 +12,7 @@ import ScrollToTopButton from "./presentation/components/ScrollToTopButton";
 
 function App() {
   return (
-    <>
+    <div className="w-full overflow-x-hidden">
       <Navbar />
       <Hero />
       <SkillsPage />
@@ -23,7 +23,7 @@ function App() {
       <ContactSection />
       <Footer />
       <ScrollToTopButton />
-    </>
+    </div>
   )
 }
 

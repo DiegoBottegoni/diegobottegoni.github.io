@@ -18,7 +18,7 @@ export default function AboutPage() {
                         </p>
 
                         {/* Texto inferior */}
-                        <div className="mt-82">
+                        <div className="my-6 lg:mt-82">
                             <h3 className="text-2xl font-semibold mb-2">What I offer</h3>
                             <p className="text-lg text-muted-foreground">
                                 Web development · App development · UI Implementation (to be defined)
