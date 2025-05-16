@@ -10,14 +10,14 @@ type ProjectProps = {
 
 export const ProjectCard = ({ img, url, github, title, text }: ProjectProps) => {
     return (
-        <div className="flex flex-col md:flex-row h-86 min-h-72 md:min-h-60 rounded-lg shadow-lg overflow-hidden bg-white transition hover:shadow-2xl">
+        <div className="flex flex-col md:flex-row rounded-lg shadow-lg overflow-hidden bg-white transition hover:shadow-2xl">
             {/* Left - Text */}
-            <div className="md:w-1/2 p-6 flex flex-col justify-between gap-4 mt-6 mr-8">
+            <div className="md:w-1/2 p-6 flex flex-col justify-between gap-4 pr-10">
                 <div className="space-y-2">
                     <h3 className="text-xl font-semibold capitalize">{title}</h3>
-                    <p className="text-sm text-gray-600 dark:text-gray-300 mt-6">{text}</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-300 mt-4">{text}</p>
                 </div>
-                <div className="flex items-center gap-4 pt-2">
+                <div className="flex items-center gap-4 pt-4">
                     <a
                         href={url}
                         target="_blank"
@@ -38,11 +38,11 @@ export const ProjectCard = ({ img, url, github, title, text }: ProjectProps) => 
             </div>
 
             {/* Right - Image */}
-            <div className="md:w-1/2 py-4 pr-4">
+            <div className="md:w-1/2 p-4">
                 <img
                     src={img}
                     alt={title}
-                    className="w-full h-full object-cover md:rounded-lg"
+                    className="w-full h-64 md:h-full object-cover"
                 />
             </div>
         </div>
