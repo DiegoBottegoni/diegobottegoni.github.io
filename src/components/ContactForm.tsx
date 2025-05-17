@@ -4,16 +4,16 @@ const ContactForm = () => {
             <form className="space-y-5 w-full">
                 <input
                     type="text"
-                    placeholder="Full name"
+                    placeholder="Name"
                     className="w-full border border-gray-300 rounded-4xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
                 />
                 <input
                     type="email"
-                    placeholder="Email address"
+                    placeholder="Email"
                     className="w-full border border-gray-300 rounded-4xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
                 />
                 <textarea
-                    placeholder="Your message"
+                    placeholder="Message"
                     rows={10}
                     className="w-full border border-gray-300 rounded-4xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black resize-none"
                 />
