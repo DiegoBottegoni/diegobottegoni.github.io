@@ -20,7 +20,7 @@ const ContactPage = () => {
                 </div>
 
                 {/* Info personal */}
-                <div className="space-y-8 lg:col-span-2 lg:row-span-3 lg:col-start-1 lg:row-start-3">
+                <div className="space-y-8 lg:col-span-2 lg:row-span-3 lg:col-start-1 lg:row-start-3 lg:pl-8">
                     <div className="flex items-center gap-2">
                         <Github />
                         <p>Github</p>
@@ -41,7 +41,7 @@ const ContactPage = () => {
 
                 {/* Título */}
                 <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 flex items-end">
-                    <h1 className="text-6xl font-bold text-gray-900 pb-8">CONTACT</h1>
+                    <h1 className="text-6xl font-bold text-gray-900 pb-8 lg:pl-8">CONTACT</h1>
                 </div>
             </main>
 
