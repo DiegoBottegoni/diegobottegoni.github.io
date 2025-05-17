@@ -13,7 +13,8 @@ const ContactPage = () => {
                 <Navbar />
             </div>
             {/* Main */}
-            <main className="flex-grow px-4 lg:px-20 overflow-hidden pt-16 lg:pb-20">
+            <main className="flex-grow px-4 lg:px-20 lg:overflow-hidden pt-16 lg:pb-20">
+
                 <div className="flex flex-col gap-8 lg:grid lg:grid-cols-5 lg:grid-rows-6 lg:gap-4">
 
                     {/* Título - primero en mobile */}
@@ -49,8 +50,9 @@ const ContactPage = () => {
             </main>
 
             {/* Footer */}
-            {/* <div className="shrink-0"> */}
+
             <div className="fixed bottom-0 left-0 w-full z-50 bg-white shadow pb-4">
+
 
                 <Footer />
             </div>
@@ -59,4 +61,3 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
-
