@@ -1,35 +1,6 @@
-// const ContactForm = () => {
-//     return (
-//         <div className="bg-[#F8F8F8] ">
-//             <form className="space-y-5 w-full">
-//                 <input
-//                     type="text"
-//                     placeholder="Full name"
-//                     className="w-full border border-gray-300 rounded-4xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
-//                 />
-//                 <input
-//                     type="email"
-//                     placeholder="Email address"
-//                     className="w-full border border-gray-300 rounded-4xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
-//                 />
-//                 <textarea
-//                     placeholder="Your message"
-//                     rows={5}
-//                     className="w-full border border-gray-300 rounded-4xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black resize-none"
-//                 />
-//                 <button
-//                     type="submit"
-//                     className="w-full bg-black text-white py-3 rounded-full hover:bg-gray-800 transition text-lg font-medium"
-//                 >
-//                     Send Message
-//                 </button>
-//             </form>
-//         </div>
-//     );
-// };
 const ContactForm = () => {
     return (
-        <div className="bg-[#F8F8F8] ">
+        <div className="bg-[#F8F8F8] w-full pr-8">
             <form className="space-y-5 w-full">
                 <input
                     type="text"
@@ -43,7 +14,7 @@ const ContactForm = () => {
                 />
                 <textarea
                     placeholder="Your message"
-                    rows={5}
+                    rows={10}
                     className="w-full border border-gray-300 rounded-4xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black resize-none"
                 />
                 <button
