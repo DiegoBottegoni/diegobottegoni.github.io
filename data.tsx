@@ -15,10 +15,10 @@ import { TbApi } from "react-icons/tb";
 // ];
 
 export const links = [
-  { id: nanoid(), href: "#home", text: "home" },
+  { id: nanoid(), href: "/", text: "home" },
   { id: nanoid(), href: "#about", text: "about" },
   { id: nanoid(), href: "#works", text: "works" },
-  { id: nanoid(), href: "#contact", text: "contact" },
+  { id: nanoid(), href: "/contact", text: "contact" },
 ];
 
 export const skills = [
