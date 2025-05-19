@@ -7,7 +7,7 @@ import { Toaster } from 'sonner';
 function App() {
   return (
     <>
-      <Toaster position="top-right" />
+      <Toaster position="top-right" className="z-100" />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<ContactPage />} />
