@@ -61,14 +61,10 @@ const Navbar = () => {
                 </ul>
 
                 {/* Icono menú mobile */}
-                {/* <div className="md:hidden w-full flex justify-between items-center">
-                    <Link to="/" className="uppercase font-semibold text-sm tracking-wide">Home</Link>
-                    <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="text-xl font-bold">
-                        ☰
-                    </button>
-                </div> */}
+
                 <div className="md:hidden w-full flex justify-between items-center">
-                    <Link to="/" className="uppercase font-semibold text-sm tracking-wide">Home</Link>
+                    {/* <Link to="/" className="uppercase font-semibold text-sm tracking-wide">Home</Link> */}
+                    <div></div>
                     <button
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                         className="text-gray-800 hover:text-gray-600 transition-colors"

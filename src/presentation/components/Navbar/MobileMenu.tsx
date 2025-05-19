@@ -11,7 +11,7 @@ const MobileMenu = ({ onClose, handleLanguageToggle }: MobileMenuProps) => {
     const location = useLocation();
 
     const handleAnchorNavigation = (anchorId: string) => {
-        onClose(); // cerramos el menú
+        onClose();
         if (location.pathname !== "/") {
             navigate("/", { state: { scrollTo: anchorId } });
         } else {
@@ -22,7 +22,7 @@ const MobileMenu = ({ onClose, handleLanguageToggle }: MobileMenuProps) => {
 
     return (
         <div className="absolute top-full left-0 w-full bg-[#F4F4F3] shadow-md z-50 flex flex-col items-center py-4 gap-4 text-sm font-semibold uppercase">
-            {/* <Link to="/" onClick={onClose}>Home</Link> */}
+            <Link to="/" onClick={onClose}>Home</Link>
             <button className="uppercase" onClick={() => handleAnchorNavigation("about")}>About</button>
             <button className="uppercase" onClick={() => handleAnchorNavigation("works")}>Works</button>
             <Link to="/contact" onClick={onClose}>Contact</Link>

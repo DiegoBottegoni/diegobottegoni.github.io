@@ -40,13 +40,12 @@ const LogoCarousel = () => {
                 {duplicatedSkills.map((skill, index) => (
                     <motion.div
                         key={`${skill.id}-${index}`}
-                        className="flex-shrink-0 w-24 h-24 flex items-center justify-center grayscale hover:grayscale-0 transition-all"
+                        className="h-24 w-24 flex-shrink-0 grayscale flex items-center justify-center transition-all mx-8 sm:mx-18"
                     >
-                        <div className="w-full h-full flex items-center justify-center">
-                            {skill.icon}
-                        </div>
+                        {skill.icon}
                     </motion.div>
                 ))}
+
             </div>
         </div>
     );
