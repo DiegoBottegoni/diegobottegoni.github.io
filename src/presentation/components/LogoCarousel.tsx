@@ -41,6 +41,8 @@ const LogoCarousel = () => {
                     <motion.div
                         key={`${skill.id}-${index}`}
                         className="h-24 w-24 flex-shrink-0 grayscale flex items-center justify-center transition-all mx-8 sm:mx-18"
+
+
                     >
                         {skill.icon}
                     </motion.div>
