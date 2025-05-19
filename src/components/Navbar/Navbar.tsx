@@ -1,6 +1,8 @@
 import { useNavigate, useLocation, Link } from "react-router-dom";
 import { useState } from "react";
 import MobileMenu from "../../presentation/components/Navbar/MobileMenu";
+import { LuMenu, LuX } from "react-icons/lu";
+
 
 const Navbar = () => {
     const [showTooltip, setShowTooltip] = useState(false);
@@ -59,12 +61,22 @@ const Navbar = () => {
                 </ul>
 
                 {/* Icono menú mobile */}
-                <div className="md:hidden w-full flex justify-between items-center">
+                {/* <div className="md:hidden w-full flex justify-between items-center">
                     <Link to="/" className="uppercase font-semibold text-sm tracking-wide">Home</Link>
                     <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="text-xl font-bold">
                         ☰
                     </button>
+                </div> */}
+                <div className="md:hidden w-full flex justify-between items-center">
+                    <Link to="/" className="uppercase font-semibold text-sm tracking-wide">Home</Link>
+                    <button
+                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                        className="text-gray-800 hover:text-gray-600 transition-colors"
+                    >
+                        {isMobileMenuOpen ? <LuX size={24} /> : <LuMenu size={24} />}
+                    </button>
                 </div>
+
 
                 {/* Menú desplegable mobile */}
                 {isMobileMenuOpen && (
