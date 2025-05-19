@@ -1,50 +1,82 @@
-import { Link } from "react-router-dom";
-import { useNavigate, useLocation } from "react-router-dom";
-
-
-const handleLanguageToggle = () => {
-    // lógica para cambiar idioma
-};
+import { useNavigate, useLocation, Link } from "react-router-dom";
+import { useState } from "react";
+import MobileMenu from "../../presentation/components/Navbar/MobileMenu";
 
 const Navbar = () => {
+    const [showTooltip, setShowTooltip] = useState(false);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
     const navigate = useNavigate();
     const location = useLocation();
 
+    const handleLanguageToggle = () => {
+        setShowTooltip(true);
+        setTimeout(() => setShowTooltip(false), 2500);
+    };
+
     const handleAnchorNavigation = (anchorId: string) => {
         if (location.pathname !== "/") {
-            // Si no estamos en "/", navegamos y luego scroll
             navigate("/", { state: { scrollTo: anchorId } });
         } else {
-            // Ya estamos en home, hacemos scroll directo
             const el = document.getElementById(anchorId);
             if (el) el.scrollIntoView({ behavior: "smooth" });
         }
     };
 
     return (
-        <nav id="home" className="bg-[#F4F4F3] py-4">
-            <div className="max-w-screen-xl mx-auto px-6">
-                <ul className="flex justify-between text-sm font-semibold tracking-wide uppercase">
+        <nav id="home" className="bg-[#F4F4F3] py-4 relative">
+            <div className="max-w-screen-xl mx-auto px-6 flex justify-between items-center">
+                {/* Menú completo (visible en desktop) */}
+                <ul className="hidden md:flex w-full justify-between text-sm font-semibold tracking-wide">
                     <li>
-                        <Link to="/">Home</Link>
+                        <Link to="/" className="uppercase">Home</Link>
                     </li>
                     <li>
-                        <button className="uppercase cursor-pointer" onClick={() => handleAnchorNavigation("about")}>About</button>
+                        <button className="uppercase cursor-pointer" onClick={() => handleAnchorNavigation("about")}>
+                            About
+                        </button>
                     </li>
                     <li>
-                        <button className="uppercase cursor-pointer" onClick={() => handleAnchorNavigation("works")}>Works</button>
+                        <button className="uppercase cursor-pointer" onClick={() => handleAnchorNavigation("works")}>
+                            Works
+                        </button>
                     </li>
                     <li>
-                        <Link to="/contact">Contact</Link>
+                        <Link to="/contact" className="uppercase">
+                            Contact
+                        </Link>
                     </li>
-                    <li>
-                        <button className="uppercase cursor-pointer" onClick={handleLanguageToggle}>EN / ES</button>
+                    <li className="relative">
+                        <button className="uppercase cursor-pointer" onClick={handleLanguageToggle}>
+                            EN / ES
+                        </button>
+                        {showTooltip && (
+                            <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-max px-2 py-1 rounded bg-gray-800 text-white text-xs shadow transition-opacity duration-200">
+                                Coming soon...
+                            </div>
+                        )}
                     </li>
                 </ul>
+
+                {/* Icono menú mobile */}
+                <div className="md:hidden w-full flex justify-between items-center">
+                    <Link to="/" className="uppercase font-semibold text-sm tracking-wide">Home</Link>
+                    <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="text-xl font-bold">
+                        ☰
+                    </button>
+                </div>
+
+                {/* Menú desplegable mobile */}
+                {isMobileMenuOpen && (
+                    <MobileMenu
+                        onClose={() => setIsMobileMenuOpen(false)}
+                        handleAnchorNavigation={handleAnchorNavigation}
+                        handleLanguageToggle={handleLanguageToggle}
+                    />
+                )}
             </div>
         </nav>
     );
 };
-
 
 export default Navbar;

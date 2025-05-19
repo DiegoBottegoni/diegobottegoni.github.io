@@ -4,7 +4,7 @@ import { FiChevronUp } from "react-icons/fi";
 const ScrollToTopButton = () => {
     const [visible, setVisible] = useState(false);
 
-    // Mostrar botón cuando scrollY > 300px (podés ajustar)
+    // Mostrar botón cuando scrollY > 200px
     const toggleVisibility = () => {
         if (window.pageYOffset > 200) {
             setVisible(true);
@@ -29,7 +29,6 @@ const ScrollToTopButton = () => {
         <button
             onClick={scrollToTop}
             aria-label="Scroll to top"
-            // className="fixed bottom-8 right-8 bg-[#F4F4F3] p-3 rounded-full shadow-lg hover:bg-gray-200 transition-colors duration-300"
             className="fixed right-4 bottom-4 sm:bottom-8 bg-[#F4F4F3] p-3 rounded-full shadow-lg hover:bg-gray-200 transition-colors duration-300"
 
         >
