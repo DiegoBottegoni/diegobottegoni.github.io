@@ -9,17 +9,17 @@ type ProjectProps = {
 };
 export const ProjectCard = ({ img, url, github, title, text }: ProjectProps) => {
     return (
-        <div className="flex flex-col md:flex-row rounded-lg shadow-lg overflow-hidden bg-white transition hover:shadow-2xl">
-            {/* Imagen - Mobile arriba, Desktop derecha */}
-            <div className="order-1 md:order-2 md:w-1/2 p-4">
+        <div className="flex flex-col md:flex-row rounded-lg shadow-lg overflow-hidden bg-white transition hover:shadow-2xl h-full min-h-[400px]">
+            {/* Imagen */}
+            <div className="order-1 md:order-2 md:w-1/2 p-4 flex items-center justify-center">
                 <img
                     src={img}
                     alt={title}
-                    className="w-full h-64 md:h-full object-contain hover:object-cover transition-transform duration-300 transform hover:scale-105 hover:shadow-lg"
+                    className="w-full h-[300px] object-cover"
                 />
             </div>
 
-            {/* Texto - Mobile abajo, Desktop izquierda */}
+            {/* Texto */}
             <div className="order-2 md:order-1 md:w-1/2 p-6 flex flex-col justify-between gap-4 pr-10">
                 <div className="space-y-2">
                     <h3 className="text-xl font-semibold capitalize">{title}</h3>
