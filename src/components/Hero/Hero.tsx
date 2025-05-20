@@ -1,17 +1,17 @@
 const Hero = () => {
     return (
-        <section className="bg-[#F4F4F3] min-h-[calc(100vh-64px)] flex items-center justify-center">
-            <div className="w-full max-w-6xl sm:px-16 text-center py-16 flex flex-col items-center">
+        <section className="bg-[#F4F4F3] flex-1 flex items-center justify-center">
+            <div className="w-full max-w-6xl sm:px-16 px-6 text-center sm:pt-8 pb-8 sm:pb-16 flex flex-col items-center justify-center gap-6">
 
                 <div className="flex justify-center w-full">
-                    <h1 className="text-[clamp(4rem,13vw,11.5rem)] font-bold leading-[0.9] tracking-normal sm:tracking-[0.02em] text-center">
+                    <h1 className="text-[clamp(3.5rem,11vw,11rem)] font-bold leading-[0.9] tracking-normal sm:tracking-[0.02em] text-center">
                         DIEGO
                         <br />
                         BOTTEGONI
                     </h1>
                 </div>
 
-                <div className="relative z-10 w-32 h-44 sm:w-56 sm:h-72 -mt-6 sm:-mt-14 mb-6 rounded-2xl overflow-hidden">
+                <div className="relative z-10 w-32 h-44 sm:w-56 sm:h-72 -mt-6 sm:-mt-12 rounded-2xl overflow-hidden">
                     <img
                         src="/Profile-Dev-Img.jpg"
                         alt="Diego Bottegoni"
@@ -19,13 +19,11 @@ const Hero = () => {
                     />
                 </div>
 
-                <p className="text-sm sm:text-base font-semibold tracking-wide uppercase mt-4 pb-16">
+                <p className="text-sm sm:text-base font-semibold tracking-wide uppercase mt-2">
                     Front End Developer <br /> Buenos Aires, Argentina
                 </p>
-
             </div>
         </section>
     );
 };
-
 export default Hero;

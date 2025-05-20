@@ -63,7 +63,7 @@ const Navbar = () => {
                 {/* Icono menú mobile */}
 
                 <div className="md:hidden w-full flex justify-between items-center">
-                    {/* <Link to="/" className="uppercase font-semibold text-sm tracking-wide">Home</Link> */}
+                    <Link to="/" className="uppercase font-semibold text-sm tracking-wide">Home</Link>
                     <div></div>
                     <button
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

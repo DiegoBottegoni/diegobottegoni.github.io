@@ -27,9 +27,11 @@ const Home = () => {
     }, [location]);
 
     return (
-        <div className="w-full overflow-x-hidden">
-            <Navbar />
-            <Hero />
+        <div className="w-full overflow-x-hidden ">
+            <div className="flex flex-col h-screen">
+                <Navbar />
+                <Hero />
+            </div>
             <SkillsPage />
             <AboutPage />
             <BannerSection />
