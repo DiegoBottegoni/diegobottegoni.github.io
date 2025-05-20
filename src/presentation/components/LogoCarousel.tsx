@@ -38,7 +38,7 @@ const LogoCarousel = () => {
         let speed = 0.5; // Desktop por defecto
 
         if (screenWidth < 768) {
-            speed = 1.5; // Mobile
+            speed = 2; // Mobile
         } else if (screenWidth < 1024) {
             speed = 2; // Tablet
         }
