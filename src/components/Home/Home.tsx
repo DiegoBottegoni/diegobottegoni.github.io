@@ -76,7 +76,7 @@ const Home = () => {
     }, [location]);
 
     return (
-        <div className="w-full overflow-x-hidden relative"> {/* agregué relative para posicionar bien la bola */}
+        <div className="w-full overflow-x-hidden relative"> {/* relative para posicionar bien la bola */}
             <div className="flex flex-col h-screen">
                 <Navbar />
                 <Hero />
@@ -89,8 +89,7 @@ const Home = () => {
             <ContactSection />
             <Footer />
             <ScrollToTopButton />
-
-            <Drag /> {/* Acá ponés la bola que sigue el mouse */}
+            <Drag />
         </div>
     );
 };

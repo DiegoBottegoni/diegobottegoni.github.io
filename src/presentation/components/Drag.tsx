@@ -10,7 +10,7 @@ export default function Drag() {
     return <motion.div ref={ref} style={{ ...ball, x, y }} />
 }
 
-const spring = { damping: 10, stiffness: 100, restDelta: 0.001 }
+const spring = { damping: 10, stiffness: 200, restDelta: 0.001 }
 
 
 export function useFollowPointer(ref: RefObject<HTMLDivElement | null>) {

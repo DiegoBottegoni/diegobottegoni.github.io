@@ -60,7 +60,7 @@ const ContactForm = () => {
                     placeholder="Message"
                     rows={10}
                     required
-                    className="w-full border border-gray-300 rounded-4xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black resize-none"
+                    className="w-full border border-gray-300 rounded-2xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black resize-none"
                 />
 
                 {/* 🛡️ Anti-bot honeypot */}
