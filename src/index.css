@@ -41,7 +41,7 @@
 
 /* Por defecto: mobile (más rápido) */
 .animate-scroll {
-  animation: scroll 20s linear infinite;
+  animation: scroll 40s linear infinite;
 }
 
 /* Pantallas medianas en adelante: más lento */

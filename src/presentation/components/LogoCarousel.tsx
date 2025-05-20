@@ -37,9 +37,9 @@ const LogoCarousel = () => {
 
         const screenWidth = window.innerWidth;
         if (screenWidth < 768) {
-            speed = 2.5;
-        } else if (screenWidth < 1024) {
             speed = 1.5;
+        } else if (screenWidth < 1024) {
+            speed = 1.2;
         }
 
         const scroll = () => {
