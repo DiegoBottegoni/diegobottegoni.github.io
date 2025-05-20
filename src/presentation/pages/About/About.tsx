@@ -11,17 +11,18 @@ export default function AboutPage() {
                     <div className="flex-1 flex flex-col justify-between h-full">
                         {/* Texto superior */}
                         <p className="text-lg">
-                            Soy desarrollador con foco en transformar problemas en soluciones prácticas,
-                            buscando siempre mejorar tanto el producto como mis habilidades.
-                            Trabajo bien en equipo, disfruto del intercambio de ideas y busco entornos donde
-                            la curiosidad y la mejora continua sean parte de la cultura.
+                            I'm a developer focused on turning problems into simple, effective solutions.
+                            I'm driven by the desire to improve—not just the product, but also my own skills—and I see every challenge as a chance to learn something new.
+                            I enjoy working in a team, sharing ideas, and being part of environments where curiosity and continuous improvement are part of the culture.
+                            Today, I can contribute with my Front-End knowledge and, above all, with an open mindset, strong commitment, and a real drive to grow.
+                            My goal is to bring value from day one—whatever the challenge.
                         </p>
 
                         {/* Texto inferior */}
-                        <div className="my-6 lg:mt-82">
+                        <div className="my-6 lg:mt-36">
                             <h3 className="text-2xl font-semibold mb-2">What I offer</h3>
                             <p className="text-lg text-muted-foreground">
-                                Web development · App development · UI Implementation (to be defined)
+                                · Web development · App development · UI/UX Implementation · Responsive interfaces · Frontend logic · API integration · Clean code · Scalable apps · Real-world solutions · Modern front-end · Continuous learning
                             </p>
                         </div>
                     </div>

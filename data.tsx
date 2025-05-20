@@ -3,6 +3,9 @@ import { FaGithub, FaHtml5, FaJs, FaNode, FaReact } from "react-icons/fa";
 import { BiLogoTypescript } from "react-icons/bi";
 import { SiMongodb, SiTailwindcss } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
+import ecommerceImg from "./public/ecommerce-img.jpg"
+import colorGeneratorImg from "./public/color-generator.jpg"
+import moreProjectsImg from "./public/more-projects.jpg"
 
 export const skills = [
   {
@@ -64,110 +67,29 @@ export const skills = [
 export const projects = [
   {
     id: nanoid(),
-    img: "https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=800",
-    url: "https://011-mix-master.netlify.app/",
+    img: ecommerceImg,
+    url: "https://13-comfy-store.netlify.app/",
     github:
-      "https://github.com/DiegoBottegoni/react-course-projects/tree/main/12-mix-master",
-    title: "Mix Master",
-    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.",
+      "https://github.com/DiegoBottegoni/13-comfy-store",
+    title: "E-commerce",
+    text: "A responsive e-commerce site built with React, featuring a product catalog, shopping cart, and user authentication. It integrates with a third-party API to fetch product data dynamically. Users can browse items, filter by category, view product details, add them to their cart, and simulate a secure checkout experience.",
   },
   {
     id: nanoid(),
-    img: "https://images.pexels.com/photos/2148222/pexels-photo-2148222.jpeg?auto=compress&cs=tinysrgb&w=800",
-    url: "https://unsplash-img-react-vite.netlify.app/",
+    img: colorGeneratorImg,
+    url: "https://009-color-generator.netlify.app/",
     github:
-      "https://github.com/DiegoBottegoni/react-course-projects/tree/main/11-unsplash-images",
-    title: "unsplash images",
-    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.",
+      "https://github.com/DiegoBottegoni/react-course-projects/tree/main/09-color-generator",
+    title: "color generator",
+    text: "A color generator app built with React, allowing users to create and save color palettes. It features a user-friendly interface and integrates with a third-party API for color suggestions.",
   },
   {
     id: nanoid(),
-    img: "https://images.pexels.com/photos/12883026/pexels-photo-12883026.jpeg?auto=compress&cs=tinysrgb&w=800",
-    url: "https://010-grocery-bud.netlify.app/",
+    img: moreProjectsImg,
+    url: "https://github.com/DiegoBottegoni/react-course-projects",
     github:
-      "https://github.com/DiegoBottegoni/react-course-projects/tree/main/10-grocery-bud",
-    title: "grocery bud",
-    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.",
+      "https://github.com/DiegoBottegoni/react-course-projects",
+    title: "More Projects",
+    text: "A collection of various projects built with React, showcasing different features and functionalities. Each project demonstrates a unique aspect of React development, from state management to API integration.",
   },
-  // {
-  //   id: nanoid(),
-  //   img: "https://images.pexels.com/photos/12883026/pexels-photo-12883026.jpeg?auto=compress&cs=tinysrgb&w=800",
-  //   url: "https://009-color-generator.netlify.app/",
-  //   github:
-  //     "https://github.com/DiegoBottegoni/react-course-projects/tree/main/09-color-generator",
-  //   title: "color generator",
-  //   text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.",
-  // },
-  // {
-  //   id: nanoid(),
-  //   img: "https://images.pexels.com/photos/12883026/pexels-photo-12883026.jpeg?auto=compress&cs=tinysrgb&w=800",
-  //   url: "https://008-lorem-ipsum.netlify.app/",
-  //   github:
-  //     "https://github.com/DiegoBottegoni/react-course-projects/tree/main/08-lorem-ipsum",
-  //   title: "lorem ipsum generator",
-  //   text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.",
-  // },
-  // {
-  //   id: nanoid(),
-  //   img: "https://images.pexels.com/photos/12883026/pexels-photo-12883026.jpeg?auto=compress&cs=tinysrgb&w=800",
-  //   url: "https://007-slider.netlify.app/",
-  //   github:
-  //     "https://github.com/DiegoBottegoni/react-course-projects/tree/main/07-slider",
-  //   title: "slider",
-  //   text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.",
-  // },
-  // {
-  //   id: nanoid(),
-  //   img: "https://images.pexels.com/photos/12883026/pexels-photo-12883026.jpeg?auto=compress&cs=tinysrgb&w=800",
-  //   url: "https://006-tabs.netlify.app/",
-  //   github:
-  //     "https://github.com/DiegoBottegoni/react-course-projects/tree/main/06-tabs",
-  //   title: "tabs",
-  //   text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.",
-  // },
-  // {
-  //   id: nanoid(),
-  //   img: "https://images.pexels.com/photos/12883026/pexels-photo-12883026.jpeg?auto=compress&cs=tinysrgb&w=800",
-  //   url: "https://005-menu.netlify.app/",
-  //   github:
-  //     "https://github.com/DiegoBottegoni/react-course-projects/tree/main/05-menu",
-  //   title: "menu",
-  //   text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.",
-  // },
-  // {
-  //   id: nanoid(),
-  //   img: "https://images.pexels.com/photos/12883026/pexels-photo-12883026.jpeg?auto=compress&cs=tinysrgb&w=800",
-  //   url: "https://004-accordion.netlify.app/",
-  //   github:
-  //     "https://github.com/DiegoBottegoni/react-course-projects/tree/main/04-accordion",
-  //   title: "accordion",
-  //   text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.",
-  // },
-  // {
-  //   id: nanoid(),
-  //   img: "https://images.pexels.com/photos/12883026/pexels-photo-12883026.jpeg?auto=compress&cs=tinysrgb&w=800",
-  //   url: "https://003-reviews.netlify.app/",
-  //   github:
-  //     "https://github.com/DiegoBottegoni/react-course-projects/tree/main/03-reviews",
-  //   title: "reviews",
-  //   text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.",
-  // },
-  // {
-  //   id: nanoid(),
-  //   img: "https://images.pexels.com/photos/12883026/pexels-photo-12883026.jpeg?auto=compress&cs=tinysrgb&w=800",
-  //   url: "https://002-tours-react.netlify.app/",
-  //   github:
-  //     "https://github.com/DiegoBottegoni/react-course-projects/tree/main/02-tours",
-  //   title: "tours",
-  //   text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.",
-  // },
-  // {
-  //   id: nanoid(),
-  //   img: "https://images.pexels.com/photos/12883026/pexels-photo-12883026.jpeg?auto=compress&cs=tinysrgb&w=800",
-  //   url: "https://001-birthday-buddy.netlify.app/",
-  //   github:
-  //     "https://github.com/DiegoBottegoni/react-course-projects/tree/main/01-birthday-buddy",
-  //   title: "birthday buddy",
-  //   text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.",
-  // },
 ];
