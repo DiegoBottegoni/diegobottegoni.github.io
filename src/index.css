@@ -41,19 +41,19 @@
 
 /* Por defecto: mobile (más rápido) */
 .animate-scroll {
-  animation: scroll 10s linear infinite;
+  animation: scroll 3s linear infinite;
 }
 
 /* Pantallas medianas en adelante: más lento */
 @media (min-width: 768px) {
   .animate-scroll {
-    animation: scroll 30s linear infinite;
+    animation: scroll 10s linear infinite;
   }
 }
 
 @media (min-width: 1024px) {
   .animate-scroll {
-    animation: scroll 40s linear infinite;
+    animation: scroll 10s linear infinite;
   }
 }
 

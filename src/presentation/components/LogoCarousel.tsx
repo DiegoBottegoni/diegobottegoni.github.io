@@ -34,12 +34,20 @@ const LogoCarousel = () => {
 
         let animationFrameId: number;
 
+        const screenWidth = window.innerWidth;
+        let speed = 0.5; // Desktop por defecto
+
+        if (screenWidth < 768) {
+            speed = 1.5; // Mobile
+        } else if (screenWidth < 1024) {
+            speed = 2; // Tablet
+        }
+
         const scrollStep = () => {
             if (!el) return;
 
-            el.scrollLeft += 0.5;
+            el.scrollLeft += speed;
 
-            // Cuando haya scrolleado un tercio del contenido (una repetición), reinicia
             if (el.scrollLeft >= el.scrollWidth / 3) {
                 el.scrollLeft = 0;
             }
