@@ -10,19 +10,40 @@ export default function AboutPage() {
                     {/* Textos a la izquierda */}
                     <div className="flex-1 flex flex-col justify-between h-full">
                         {/* Texto superior */}
-                        <p className="text-lg">
-                            I'm a developer focused on turning problems into simple, effective solutions.
-                            I'm driven by the desire to improve—not just the product, but also my own skills—and I see every challenge as a chance to learn something new.
-                            I enjoy working in a team, sharing ideas, and being part of environments where curiosity and continuous improvement are part of the culture.
-                            Today, I can contribute with my Front-End knowledge and, above all, with an open mindset, strong commitment, and a real drive to grow.
-                            My goal is to bring value from day one—whatever the challenge.
-                        </p>
+
+                        <div className="space-y-4 text-lg leading-relaxed">
+                            <div>Musician and nerd all my life, and now also a front-end developer.</div>
+                            <div>
+                                Just check my pictures — I’m rocking ‘Back to the Future’ and ‘Rick & Morty’ t-shirts!{' '}
+                                <span className="text-red-600 font-bold text-lg ml-2">¡Nerd alert!</span>
+                            </div>
+                            <div>
+                                As a musician, I always dedicated myself to putting ideas on paper and making them sound. Today I adapt that same passion to development.
+                            </div>
+                            <div>
+                                I’m still stuck in the “why age” of my three years. I’m obsessed with figuring out why something is broken so I can fix it. And if I can’t... well, why not?
+                            </div>
+                            <div>
+                                I jumped into Sound Engineering to mathematically understand why something sounds good or bad. Just imagine that level of nerdiness!
+                            </div>
+                            <div>
+                                That’s the attitude that defines me, more than as a musician or developer, as a person.
+                            </div>
+                            <div>
+                                I believe everything is possible, it's just a matter of learning how to do it.
+                            </div>
+                            {/* <div>
+                                If there's something I want to get done but don't know how to do it, I learn it and do it.
+                            </div> */}
+
+                        </div>
+
 
                         {/* Texto inferior */}
                         <div className="my-6 lg:mt-36">
                             <h3 className="text-2xl font-semibold mb-2">What I offer</h3>
                             <p className="text-lg text-muted-foreground">
-                                · Web development · App development · UI/UX Implementation · Responsive interfaces · Frontend logic · API integration · Clean code · Scalable apps · Real-world solutions · Modern front-end · Continuous learning
+                                &lt;WebDevelopment&gt; · &lt;AppDevelopment&gt; · &lt;UIUXImplementation&gt; · &lt;ResponsiveInterfaces&gt; · &lt;FrontendLogic&gt; · &lt;APIIntegration&gt; · &lt;CleanCode&gt; · &lt;ScalableApps&gt; · &lt;RealWorldSolutions&gt; · &lt;ModernFrontEnd&gt; · &lt;ContinuousLearning&gt;
                             </p>
                         </div>
                     </div>

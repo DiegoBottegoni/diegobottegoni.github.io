@@ -4,7 +4,7 @@ const Hero = () => {
             <div className="w-full max-w-6xl sm:px-16 px-6 text-center sm:pt-8 pb-8 sm:pb-16 flex flex-col items-center justify-center gap-6">
 
                 <div className="flex justify-center w-full">
-                    <h1 className="text-[clamp(3.5rem,11vw,11rem)] font-bold leading-[0.9] tracking-normal sm:tracking-[0.02em] text-center">
+                    <h1 className="text-[clamp(3.5rem,11vw,11rem)] font-bold leading-[0.9] tracking-normal sm:tracking-[0.02em] text-center cursor-default">
                         DIEGO
                         <br />
                         BOTTEGONI
@@ -19,7 +19,7 @@ const Hero = () => {
                     />
                 </div>
 
-                <p className="text-sm sm:text-base font-semibold tracking-wide uppercase mt-2">
+                <p className="text-sm sm:text-base font-semibold tracking-wide uppercase mt-2 cursor-default">
                     Front End Developer <br /> Buenos Aires, Argentina
                 </p>
             </div>
