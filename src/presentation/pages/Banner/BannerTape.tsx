@@ -29,18 +29,21 @@ export default function BannerTape({
           animationDirection: reverse ? "reverse" : "normal",
         }}
       >
-        {Array(10)
-          .fill(text)
-          .map((t, i) => (
-            <span
-              key={i}
-              className="text-4xl md:text-5xl font-extrabold uppercase tracking-wide"
-              style={{ color: textColor }}
-            >
-              {t}
-            </span>
-          ))}
+        {[...Array(2)].flatMap(() =>
+          Array(10)
+            .fill(text)
+            .map((t, i) => (
+              <span
+                key={`${t}-${i}-${reverse ? "r" : "n"}`}
+                className="text-4xl md:text-5xl font-extrabold uppercase tracking-wide"
+                style={{ color: textColor }}
+              >
+                {t}
+              </span>
+            ))
+        )}
       </motion.div>
+
     </div>
   );
 }

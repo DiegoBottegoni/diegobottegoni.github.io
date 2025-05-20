@@ -22,40 +22,40 @@ const skillsData = [
     { id: 9, icon: <TbApi className="text-8xl" /> },
 ];
 
+// Triplicamos para efecto infinito
+const duplicatedSkills = [...skillsData, ...skillsData, ...skillsData];
+
 const LogoCarousel = () => {
     const scrollRef = useRef<HTMLDivElement>(null);
-
-    // Triplicamos el array para permitir un bucle sin corte visual
-    const duplicatedSkills = [...skillsData, ...skillsData, ...skillsData];
 
     useEffect(() => {
         const el = scrollRef.current;
         if (!el) return;
 
         let animationFrameId: number;
+        let speed = 1; // default desktop speed
 
         const screenWidth = window.innerWidth;
-        let speed = 0.5; // Desktop por defecto
-
         if (screenWidth < 768) {
-            speed = 3; // Mobile
+            speed = 2.5;
         } else if (screenWidth < 1024) {
-            speed = 2; // Tablet
+            speed = 1.5;
         }
 
-        const scrollStep = () => {
+        const scroll = () => {
             if (!el) return;
 
             el.scrollLeft += speed;
 
+            // Reset sin salto visual al llegar al final del primer tercio (porque está triplicado)
             if (el.scrollLeft >= el.scrollWidth / 3) {
                 el.scrollLeft = 0;
             }
 
-            animationFrameId = requestAnimationFrame(scrollStep);
+            animationFrameId = requestAnimationFrame(scroll);
         };
 
-        animationFrameId = requestAnimationFrame(scrollStep);
+        animationFrameId = requestAnimationFrame(scroll);
 
         return () => cancelAnimationFrame(animationFrameId);
     }, []);
