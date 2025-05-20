@@ -1,53 +1,71 @@
 import { useEffect, useRef } from "react";
-import { motion, useAnimationFrame } from "framer-motion";
-import { skillsData } from "../../infrastructure/skills/data/skills";
+import {
+    FaGithub,
+    FaHtml5,
+    FaJs,
+    FaNode,
+    FaReact,
+} from "react-icons/fa";
+import { BiLogoTypescript } from "react-icons/bi";
+import { SiMongodb, SiTailwindcss } from "react-icons/si";
+import { TbApi } from "react-icons/tb";
+
+const skillsData = [
+    { id: 1, icon: <FaGithub className="text-8xl" /> },
+    { id: 2, icon: <FaHtml5 className="text-8xl" /> },
+    { id: 3, icon: <FaJs className="text-8xl" /> },
+    { id: 4, icon: <FaNode className="text-8xl" /> },
+    { id: 5, icon: <FaReact className="text-8xl" /> },
+    { id: 6, icon: <BiLogoTypescript className="text-8xl" /> },
+    { id: 7, icon: <SiMongodb className="text-8xl" /> },
+    { id: 8, icon: <SiTailwindcss className="text-8xl" /> },
+    { id: 9, icon: <TbApi className="text-8xl" /> },
+];
 
 const LogoCarousel = () => {
-    const scrollRef = useRef<HTMLDivElement | null>(null);
-    const duplicatedSkills = [...skillsData, ...skillsData, ...skillsData];
+    const scrollRef = useRef<HTMLDivElement>(null);
 
-    useAnimationFrame(() => {
-        const el = scrollRef.current;
-        if (el) {
-            el.scrollLeft += 0.5;
-            if (el.scrollLeft >= el.scrollWidth / 3) {
-                el.scrollLeft = 0;
-            }
-        }
-    });
+    // Triplicamos el array para permitir un bucle sin corte visual
+    const duplicatedSkills = [...skillsData, ...skillsData, ...skillsData];
 
     useEffect(() => {
         const el = scrollRef.current;
         if (!el) return;
 
-        const fallbackInterval = setInterval(() => {
-            el.scrollLeft += 0.3;
+        let animationFrameId: number;
+
+        const scrollStep = () => {
+            if (!el) return;
+
+            el.scrollLeft += 0.5;
+
+            // Cuando haya scrolleado un tercio del contenido (una repetición), reinicia
             if (el.scrollLeft >= el.scrollWidth / 3) {
                 el.scrollLeft = 0;
             }
-        }, 16); // ~60fps
 
-        return () => clearInterval(fallbackInterval);
+            animationFrameId = requestAnimationFrame(scrollStep);
+        };
+
+        animationFrameId = requestAnimationFrame(scrollStep);
+
+        return () => cancelAnimationFrame(animationFrameId);
     }, []);
 
     return (
-        <div className="w-full overflow-hidden">
+        <div className="w-full overflow-hidden py-6 text-black">
             <div
                 ref={scrollRef}
-                className="flex gap-8 overflow-x-auto scrollbar-hide py-4 px-2"
-                style={{ willChange: "scroll-position" }}
+                className="flex gap-24 sm:gap-32 md:gap-48 overflow-x-auto scrollbar-hide px-8"
             >
                 {duplicatedSkills.map((skill, index) => (
-                    <motion.div
+                    <div
                         key={`${skill.id}-${index}`}
-                        className="h-24 w-24 flex-shrink-0 grayscale flex items-center justify-center transition-all mx-8 sm:mx-18"
-
-
+                        className="h-24 w-24 flex-shrink-0 flex items-center justify-center"
                     >
                         {skill.icon}
-                    </motion.div>
+                    </div>
                 ))}
-
             </div>
         </div>
     );

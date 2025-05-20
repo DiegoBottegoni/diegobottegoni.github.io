@@ -35,13 +35,28 @@
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-66.6667%);
+    transform: translateX(-100%);
   }
 }
 
+/* Por defecto: mobile (más rápido) */
 .animate-scroll {
-  animation: scroll 40s linear infinite;
+  animation: scroll 10s linear infinite;
 }
+
+/* Pantallas medianas en adelante: más lento */
+@media (min-width: 768px) {
+  .animate-scroll {
+    animation: scroll 30s linear infinite;
+  }
+}
+
+@media (min-width: 1024px) {
+  .animate-scroll {
+    animation: scroll 40s linear infinite;
+  }
+}
+
 
 html, body {
   scroll-behavior: smooth;

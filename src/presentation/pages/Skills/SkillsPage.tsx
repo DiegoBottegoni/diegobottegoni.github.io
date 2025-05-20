@@ -1,5 +1,4 @@
-// import LogoCarousel from "../../components/LogoCarousel";
-import LogoCarouselCustom from "../../components/LogoCarouselCustom";
+import LogoCarousel from "../../components/LogoCarousel";
 
 export default function SkillsPage() {
     return (
@@ -10,7 +9,7 @@ export default function SkillsPage() {
             </div>
 
             {/* Carousel full width */}
-            <LogoCarouselCustom />
+            <LogoCarousel />
         </section>
 
     );

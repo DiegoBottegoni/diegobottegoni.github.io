@@ -1,59 +1,7 @@
 import { nanoid } from "nanoid";
-import { FaGithub, FaHtml5, FaJs, FaNode, FaReact } from "react-icons/fa";
-import { BiLogoTypescript } from "react-icons/bi";
-import { SiMongodb, SiTailwindcss } from "react-icons/si";
-import { TbApi } from "react-icons/tb";
 import ecommerceImg from "./public/ecommerce-img.jpg"
 import colorGeneratorImg from "./public/color-generator.jpg"
 import moreProjectsImg from "./public/more-projects.jpg"
-
-export const skillsData = [
-  {
-    id: nanoid(),
-    title: "React",
-    icon: <FaReact className="text-black !fill-black !text-black" />,
-  },
-  {
-    id: nanoid(),
-    title: "JavaScript",
-    icon: <FaJs className="text-black !fill-black !text-black" />,
-  },
-  {
-    id: nanoid(),
-    title: "TypeScript",
-    icon: <BiLogoTypescript className="text-black !fill-black !text-black" />,
-  },
-  {
-    id: nanoid(),
-    title: "HTML & CSS",
-    icon: <FaHtml5 className="text-black !fill-black !text-black" />,
-  },
-  {
-    id: nanoid(),
-    title: "Tailwind CSS",
-    icon: <SiTailwindcss className="text-black !fill-black !text-black" />,
-  },
-  {
-    id: nanoid(),
-    title: "Node.js & Express.js",
-    icon: <FaNode className="text-black !fill-black !text-black" />,
-  },
-  {
-    id: nanoid(),
-    title: "MongoDB",
-    icon: <SiMongodb className="text-black !fill-black !text-black" />,
-  },
-  {
-    id: nanoid(),
-    title: "Git & GitHub",
-    icon: <FaGithub className="text-black !fill-black !text-black" />,
-  },
-  {
-    id: nanoid(),
-    title: "RESTful APIs",
-    icon: <TbApi className="text-black !fill-black !text-black" />,
-  },
-];
 
 // export const skills = [
 //   {
