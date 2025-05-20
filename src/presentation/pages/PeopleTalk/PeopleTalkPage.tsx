@@ -28,7 +28,9 @@ function NextArrow({ onClick, style }: ArrowProps) {
         <button
             onClick={onClick}
             style={style}
-            className="z-10 text-4xl text-gray-600 hover:text-black absolute right-4 top-1/2 -translate-y-1/2"
+            // className="z-10 text-4xl text-gray-600 hover:text-black absolute right-4 top-1/2 -translate-y-1/2"
+            className="hidden sm:block z-10 text-4xl text-gray-600 hover:text-black absolute right-4 top-1/2 -translate-y-1/2"
+
         >
             <FiChevronRight />
         </button>
@@ -40,7 +42,9 @@ function PrevArrow({ onClick, style }: ArrowProps) {
         <button
             onClick={onClick}
             style={style}
-            className="z-10 text-4xl text-gray-600 hover:text-black absolute left-4 top-1/2 -translate-y-1/2"
+            // className="z-10 text-4xl text-gray-600 hover:text-black absolute left-4 top-1/2 -translate-y-1/2"
+            className="hidden sm:block z-10 text-4xl text-gray-600 hover:text-black absolute left-4 top-1/2 -translate-y-1/2"
+
         >
             <FiChevronLeft />
         </button>
@@ -60,11 +64,21 @@ const PeopleTalkPage = () => {
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
         swipe: true,
+        responsive: [
+            {
+                breakpoint: 640, // sm = 640px en tailwind
+                settings: {
+                    arrows: false, // Oculta flechas en mobile
+                },
+            },
+        ],
     };
 
     return (
-        <section className="w-screen h-screen bg-[#EDEDEC] text-gray-900 flex flex-col py-24 overflow-hidden">
-            <h2 className="text-center text-4xl font-bold uppercase mb-60">
+        <section className="w-screen min-h-screen max-h-[900px] bg-[#EDEDEC] text-gray-900 flex flex-col justify-center py-20 sm:py-24 overflow-hidden">
+
+            <h2 className="text-center text-3xl sm:text-4xl font-bold uppercase mb-40 sm:mb-60 2xl:mb-120">
+
                 La gente anda diciendo
             </h2>
 
