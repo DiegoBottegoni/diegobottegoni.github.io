@@ -13,8 +13,8 @@ const ContactPage = () => {
             </div>
             {/* Main */}
             <main className="flex-grow px-4 lg:px-20 lg:overflow-hidden pt-16 pb-32 lg:pb-20 flex items-center">
-
                 <div className="w-full max-w-screen-xl flex flex-col gap-8 lg:grid lg:grid-cols-5 lg:grid-rows-6 lg:gap-4 mx-auto">
+
                     {/* Título - primero en mobile */}
                     <div className="order-1 lg:order-none lg:col-span-2 lg:col-start-1 lg:row-start-1 flex items-end">
                         <h1 className="text-6xl font-bold pb-4 lg:pl-8">CONTACT</h1>

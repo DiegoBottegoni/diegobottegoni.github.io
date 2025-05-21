@@ -68,13 +68,13 @@ const ContactForm = () => {
 
                 {/* 🔒 Evitar CAPTCHA */}
                 <input type="hidden" name="_captcha" value="false" />
-                <div className='flex justify-end'>
+                <div className='flex md:justify-end'>
 
                     <button
                         type="submit"
                         disabled={loading}
                         // className="w-full bg-gray-900 text-white py-3 rounded-full hover:bg-gray-800 transition text-lg font-medium disabled:opacity-60"
-                        className='default-button w-1/4 rounded-full py-4'
+                        className='default-button w-full md:w-1/4 rounded-4xl md:rounded-full py-4'
                     >
                         {loading ? 'Sending...' : 'Send Message'}
                     </button>
