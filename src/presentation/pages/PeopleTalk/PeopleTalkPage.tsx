@@ -74,7 +74,7 @@ const PeopleTalkPage = () => {
 
     return (
         <section className="w-screen bg-black text-white overflow-hidden">
-            <div className="min-h-screen flex flex-col justify-between py-20 sm:py-24 lg:py-32">
+            <div className=" min-h-screen lg:min-h-[600px] flex flex-col justify-between py-20 sm:py-24 lg:py-32">
                 <h2 className="text-center text-3xl sm:text-4xl font-bold uppercase">
                     The streets say
                 </h2>
