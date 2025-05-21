@@ -3,7 +3,7 @@ import { ArrowUpRight, Github, Linkedin } from "lucide-react";
 const Footer = () => {
     return (
         <footer id="footer" className="relative w-full bg-white px-6 text-sm pt-2">
-            <div className="max-w-7xl mx-auto flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 sm:gap-0 relative text-center sm:text-left pt-4 sm:py-10">
+            <div className="max-w-7xl mx-auto flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 sm:gap-0 relative text-center sm:text-left pt-4 sm:py-10 lg:py-4">
                 {/* Izquierda */}
                 <a
                     href="mailto:diego@example.com"
