@@ -32,7 +32,7 @@ import { motion } from "framer-motion"
 
 const Hero = () => {
     return (
-        <section className="bg-[#F4F4F3] flex-1 flex items-center justify-center">
+        <section className="bg-primary-d flex-1 flex items-center justify-center">
             <div className="w-full max-w-6xl sm:px-16 px-6 text-center sm:pt-8 pb-8 sm:pb-16 flex flex-col items-center justify-center gap-6">
 
                 <div className="flex justify-center w-full">

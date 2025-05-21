@@ -9,7 +9,7 @@ const ContactSection = () => {
     };
 
     return (
-        <section id="contact" className="w-full bg-[#F4F4F3] py-42 md:py-52 text-center px-4">
+        <section id="contact" className="w-full bg-primary-l py-42 md:py-52 text-center px-4">
             <h1 className="text-6xl md:text-8xl font-semibold mb-6 py-2 font-stretch capitalize w-full">
                 Let’s work together
             </h1>

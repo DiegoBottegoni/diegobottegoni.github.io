@@ -75,22 +75,22 @@ const PeopleTalkPage = () => {
     };
 
     return (
-        <section className="w-screen min-h-screen max-h-[900px] bg-[#EDEDEC] text-gray-900 flex flex-col justify-center py-20 sm:py-24 overflow-hidden">
+        <section className="w-screen min-h-screen max-h-[900px] bg-black text-white flex flex-col justify-center py-20 sm:py-24 lg:py-30 overflow-hidden">
 
             <h2 className="text-center text-3xl sm:text-4xl font-bold uppercase mb-40 sm:mb-60 2xl:mb-120">
 
-                La gente anda diciendo
+                The streets say
             </h2>
 
             <div className="relative flex-1">
-                <Slider {...sliderSettings} className="relative h-30">
+                <Slider {...sliderSettings} className="relative h-30 pb-20">
                     {testimonies.map((item, index) => (
                         <div key={index} className="h-full w-full">
                             <div className="grid grid-rows-[1fr_auto] place-items-center h-full text-center px-8">
-                                <p className="text-xl md:text-2xl max-w-3xl italic">
+                                <p className="text-xl md:text-2xl max-w-3xl">
                                     "{item.text}"
                                 </p>
-                                <span className="text-lg font-semibold text-gray-600 mt-12">
+                                <span className="text-lg font-semibold mt-12">
                                     — {item.author}
                                 </span>
                             </div>

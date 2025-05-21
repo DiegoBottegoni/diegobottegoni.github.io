@@ -2,7 +2,7 @@ import BannerTape from "./BannerTape";
 
 export default function BannerSection() {
     return (
-        <div className="flex flex-col bg-[#F4F4F3] py-24">
+        <div className="flex flex-col bg-primary-d py-24">
             {/* Cinta de arriba: negra con letras blancas */}
             <BannerTape
                 text="FRONTEND DEVELOPER &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp; SUPER NERD &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp; FRONTEND DEVELOPER &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp; SUPER NERD &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp; "

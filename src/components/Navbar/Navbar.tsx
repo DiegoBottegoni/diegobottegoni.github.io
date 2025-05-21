@@ -26,7 +26,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav id="home" className="bg-[#F4F4F3] py-4 relative">
+        <nav id="home" className="bg-primary-d py-4 relative">
             <div className="max-w-screen-xl mx-auto px-6 flex justify-between items-center">
                 {/* Menú completo (visible en desktop) */}
                 <ul className="hidden md:flex w-full justify-between text-sm font-semibold tracking-wide">

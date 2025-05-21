@@ -28,6 +28,13 @@
     font-family: var(--font-geist);
     @apply text-gray-900;
   }
+  .bg-primary-d {
+    background-color: #EDEDEC;
+  }
+
+  .bg-primary-l {
+    background-color: #F4F4F3;
+  }
     button.default-button {
     @apply inline-block px-4 py-2 bg-gray-900 text-white text-sm rounded-md transition hover:bg-gray-700;
   }
