@@ -35,7 +35,7 @@ const ContactForm = () => {
     };
 
     return (
-        <div className="bg-[#F8F8F8] w-full pr-8">
+        <div className="bg-primary-d w-full pr-8">
             <form
                 ref={formRef}
                 onSubmit={handleSubmit}
@@ -46,21 +46,21 @@ const ContactForm = () => {
                     name="name"
                     placeholder="Name"
                     required
-                    className="w-full border border-gray-300 rounded-4xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
+                    className="w-full border border-gray-800 rounded-4xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
                 />
                 <input
                     type="email"
                     name="email"
                     placeholder="Email"
                     required
-                    className="w-full border border-gray-300 rounded-4xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
+                    className="w-full border border-gray-800 rounded-4xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
                 />
                 <textarea
                     name="message"
                     placeholder="Message"
                     rows={10}
                     required
-                    className="w-full border border-gray-300 rounded-2xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black resize-none"
+                    className="w-full border border-gray-800 rounded-2xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black resize-none"
                 />
 
                 {/* 🛡️ Anti-bot honeypot */}
@@ -68,14 +68,17 @@ const ContactForm = () => {
 
                 {/* 🔒 Evitar CAPTCHA */}
                 <input type="hidden" name="_captcha" value="false" />
+                <div className='flex justify-end'>
 
-                <button
-                    type="submit"
-                    disabled={loading}
-                    className="w-full bg-black text-white py-3 rounded-full hover:bg-gray-800 transition text-lg font-medium disabled:opacity-60"
-                >
-                    {loading ? 'Sending...' : 'Send Message'}
-                </button>
+                    <button
+                        type="submit"
+                        disabled={loading}
+                        // className="w-full bg-gray-900 text-white py-3 rounded-full hover:bg-gray-800 transition text-lg font-medium disabled:opacity-60"
+                        className='default-button w-1/4 rounded-full py-4'
+                    >
+                        {loading ? 'Sending...' : 'Send Message'}
+                    </button>
+                </div>
             </form>
         </div>
     );
