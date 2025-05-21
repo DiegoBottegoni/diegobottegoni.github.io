@@ -13,7 +13,7 @@ const Navbar = () => {
 
     const handleLanguageToggle = () => {
         setShowTooltip(true);
-        setTimeout(() => setShowTooltip(false), 2500);
+        setTimeout(() => setShowTooltip(false), 1000);
     };
 
     const handleAnchorNavigation = (anchorId: string) => {
@@ -29,7 +29,7 @@ const Navbar = () => {
         <nav id="home" className="bg-primary-d py-4 relative">
             <div className="max-w-screen-xl mx-auto px-6 flex justify-between items-center">
                 {/* Menú completo (visible en desktop) */}
-                <ul className="hidden md:flex w-full justify-between text-sm font-semibold tracking-wide">
+                <ul className="hidden md:flex w-full justify-between text-sm font-semibold tracking-wide text-gray-900">
                     <li>
                         <Link to="/" className="uppercase">Home</Link>
                     </li>
@@ -53,7 +53,7 @@ const Navbar = () => {
                             ES
                         </button>
                         {showTooltip && (
-                            <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-max px-2 py-1 rounded bg-gray-800 text-white text-xs shadow transition-opacity duration-200">
+                            <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-max px-2 py-1 rounded bg-gray-900 text-white text-xs shadow transition-opacity duration-100">
                                 Coming soon...
                             </div>
                         )}

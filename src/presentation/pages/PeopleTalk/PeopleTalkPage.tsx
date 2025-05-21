@@ -28,8 +28,7 @@ function NextArrow({ onClick, style }: ArrowProps) {
         <button
             onClick={onClick}
             style={style}
-            // className="z-10 text-4xl text-gray-600 hover:text-black absolute right-4 top-1/2 -translate-y-1/2"
-            className="hidden sm:block z-10 text-4xl text-gray-600 hover:text-black absolute right-4 top-1/2 -translate-y-1/2"
+            className="hidden sm:block z-10 text-4xl text-white hover:text-gray-300 absolute right-4 top-1/2 -translate-y-1/2 lg:mx-10"
 
         >
             <FiChevronRight />
@@ -42,8 +41,7 @@ function PrevArrow({ onClick, style }: ArrowProps) {
         <button
             onClick={onClick}
             style={style}
-            // className="z-10 text-4xl text-gray-600 hover:text-black absolute left-4 top-1/2 -translate-y-1/2"
-            className="hidden sm:block z-10 text-4xl text-gray-600 hover:text-black absolute left-4 top-1/2 -translate-y-1/2"
+            className="hidden sm:block z-10 text-4xl text-white hover:text-gray-300 absolute left-4 top-1/2 -translate-y-1/2 lg:mx-10"
 
         >
             <FiChevronLeft />
@@ -75,28 +73,22 @@ const PeopleTalkPage = () => {
     };
 
     return (
-        <section className="w-screen min-h-screen max-h-[900px] bg-black text-white flex flex-col justify-center py-20 sm:py-24 lg:py-30 overflow-hidden">
+        <section className="w-screen bg-black text-white overflow-hidden">
+            <div className="min-h-screen flex flex-col justify-between py-20 sm:py-24 lg:py-32">
+                <h2 className="text-center text-3xl sm:text-4xl font-bold uppercase">
+                    The streets say
+                </h2>
 
-            <h2 className="text-center text-3xl sm:text-4xl font-bold uppercase mb-40 sm:mb-60 2xl:mb-120">
-
-                The streets say
-            </h2>
-
-            <div className="relative flex-1">
-                <Slider {...sliderSettings} className="relative h-30 pb-20">
-                    {testimonies.map((item, index) => (
-                        <div key={index} className="h-full w-full">
-                            <div className="grid grid-rows-[1fr_auto] place-items-center h-full text-center px-8">
-                                <p className="text-xl md:text-2xl max-w-3xl">
-                                    "{item.text}"
-                                </p>
-                                <span className="text-lg font-semibold mt-12">
-                                    — {item.author}
-                                </span>
+                <div className="flex-1 flex items-center">
+                    <Slider {...sliderSettings} className="w-full">
+                        {testimonies.map((item, index) => (
+                            <div key={index} className="text-center px-8">
+                                <p className="text-xl md:text-2xl max-w-3xl mx-auto">"{item.text}"</p>
+                                <span className="text-lg font-semibold mt-12 block">— {item.author}</span>
                             </div>
-                        </div>
-                    ))}
-                </Slider>
+                        ))}
+                    </Slider>
+                </div>
             </div>
         </section>
     );

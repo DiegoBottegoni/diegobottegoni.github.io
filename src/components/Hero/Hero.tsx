@@ -60,7 +60,7 @@ const Hero = () => {
 
 
                 <p className="text-sm sm:text-base font-semibold tracking-wide uppercase mt-2 cursor-default">
-                    Front End Developer <br /> Buenos Aires, Argentina
+                    Front End Developer <br /> Based in Argentina
                 </p>
             </div>
         </section>
