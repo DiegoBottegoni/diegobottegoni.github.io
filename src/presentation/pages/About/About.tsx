@@ -15,8 +15,7 @@ export default function AboutPage() {
                                 Musician and nerd all my life, and now also a front-end developer.
                                 Just check my pictures — I’m rocking ‘Back to the Future’ and ‘Rick & Morty’ t-shirts!{' '}
                                 ¡Nerd alert!
-                            </p>
-                            <p>
+
                                 I jumped into Sound Engineering to mathematically understand why something sounds good or bad.
                                 Just imagine that level of nerdiness.
                                 That’s the attitude that defines me, more than as a musician or developer, as a person.
@@ -26,7 +25,7 @@ export default function AboutPage() {
 
 
                         {/* Texto inferior */}
-                        <div className="my-6 lg:mt-42">
+                        <div className="my-6 lg:mt-46">
                             <h3 className="text-2xl font-semibold mb-2 uppercase">What I offer</h3>
                             <p className="text-lg text-muted-foreground">
                                 {/* ·&nbsp;&nbsp;&nbsp;WebDevelopment &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; AppDevelopment &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; UIUXImplementation &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; ResponsiveInterfaces &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; FrontendLogic &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; APIIntegration &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; CleanCode &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; ScalableApps &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; RealWorldSolutions &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; ModernFrontEnd &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; ContinuousLearning */}
