@@ -50,7 +50,7 @@ const Navbar = () => {
                     </li>
                     <li className="relative">
                         <button className="uppercase cursor-pointer" onClick={handleLanguageToggle}>
-                            EN / ES
+                            ES
                         </button>
                         {showTooltip && (
                             <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-max px-2 py-1 rounded bg-gray-800 text-white text-xs shadow transition-opacity duration-200">
