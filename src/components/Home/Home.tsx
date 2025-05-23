@@ -12,7 +12,7 @@ import ContactSection from "../../presentation/pages/Contact/ContactSection";
 import Footer from "../../presentation/components/Footer/Footer";
 import ScrollToTopButton from "../../presentation/components/ScrollToTopButton";
 
-// import Drag from "../../presentation/components/Drag"; 
+// import Drag from "../../presentation/components/Drag";
 
 const Home = () => {
     const location = useLocation();
