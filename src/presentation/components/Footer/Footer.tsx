@@ -2,8 +2,8 @@ import { ArrowUpRight, Github, Linkedin } from "lucide-react";
 
 const Footer = () => {
     return (
-        <footer id="footer" className="relative w-full bg-white px-6 text-sm sm:pb-2 sm:py-2">
-            <div className="max-w-7xl mx-auto flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 sm:gap-0 relative text-center sm:text-left py-2 sm:py-10 lg:py-4">
+        <footer id="footer" className="relative w-full bg-white px-6 text-sm sm:py-2">
+            <div className="max-w-7xl mx-auto flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-0 relative text-center sm:text-left py-4 sm:py-10 lg:py-4">
 
                 {/* Email - orden 2 en mobile, orden natural en sm+ */}
                 <a
