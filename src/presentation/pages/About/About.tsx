@@ -28,9 +28,9 @@ export default function AboutPage() {
                         <div className="my-6 md:mt-30 lg:mt-64">
                             <h3 className="text-md font-bold mb-6 md:mb-4 uppercase">What I offer</h3>
                             <p className="text-md">
-                                {/* ·&nbsp;&nbsp;&nbsp;WebDevelopment &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; AppDevelopment &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; UIUXImplementation &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; ResponsiveInterfaces &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; FrontendLogic &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; APIIntegration &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; CleanCode &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; ScalableApps &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; RealWorldSolutions &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; ModernFrontEnd &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; ContinuousLearning */}
+                                WebDevelopment &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; AppDevelopment &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; UIUXImplementation &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; ResponsiveInterfaces &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; FrontendLogic &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; APIIntegration &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; CleanCode &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; ScalableApps &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; RealWorldSolutions &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; ModernFrontEnd &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; ContinuousLearning
 
-                                WebDevelopment &nbsp;·&nbsp; AppDevelopment &nbsp;·&nbsp; UIUXImplementation &nbsp;·&nbsp; ResponsiveInterfaces &nbsp;·&nbsp; FrontendLogic &nbsp;·&nbsp; APIIntegration &nbsp;·&nbsp; CleanCode &nbsp;·&nbsp; ScalableApps &nbsp;·&nbsp; ModernFrontEnd &nbsp;
+                                {/* WebDevelopment &nbsp;·&nbsp; AppDevelopment &nbsp;·&nbsp; UIUXImplementation &nbsp;·&nbsp; ResponsiveInterfaces &nbsp;·&nbsp; FrontendLogic &nbsp;·&nbsp; APIIntegration &nbsp;·&nbsp; CleanCode &nbsp;·&nbsp; ScalableApps &nbsp;·&nbsp; ModernFrontEnd &nbsp; */}
 
 
                             </p>

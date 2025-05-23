@@ -20,11 +20,11 @@ const ContactPage = () => {
                         <h1 className="text-6xl font-bold pb-4 lg:pl-8">CONTACT</h1>
                     </div>
                     {/* Form - segundo en mobile */}
-                    <div className="order-2 lg:order-none lg:col-span-3 lg:row-span-5 lg:col-start-3 lg:row-start-2">
+                    <div className="order-3 lg:order-none lg:col-span-3 lg:row-span-5 lg:col-start-3 lg:row-start-2">
                         <ContactForm />
                     </div>
                     {/* Datos - tercero en mobile */}
-                    <div className="order-3 lg:order-none space-y-8 lg:col-span-2 lg:row-span-3 lg:col-start-1 lg:row-start-2 lg:pl-8">
+                    <div className="order-2 lg:order-none space-y-8 lg:col-span-2 lg:row-span-3 lg:col-start-1 lg:row-start-2 lg:pl-8">
                         <a
                             href="https://github.com/DiegoBottegoni"
                             target="_blank"
