@@ -6,11 +6,13 @@ export default function AboutPage() {
                 <h2 id="about" className="text-4xl font-bold text-center uppercase">About Me</h2>
 
                 {/* Contenido en dos columnas */}
-                <div className="flex flex-col md:flex-row items-start gap-12">
+                {/* <div className="flex flex-col md:flex-row items-start gap-12"> */}
+                <div className="flex flex-col-reverse md:flex-row items-start gap-12">
+
                     {/* Textos a la izquierda */}
                     <div className="flex-1 flex flex-col justify-between h-full">
                         {/* Texto superior */}
-                        <div className="text-lg space-y-4">
+                        <div className="text-xl space-y-4">
                             <p className="text-gray-900">
                                 Musician and nerd all my life, and now also a front-end developer.
                                 Just check my pictures — I’m rocking ‘Back to the Future’ and ‘Rick & Morty’ t-shirts!{' '}
@@ -25,7 +27,7 @@ export default function AboutPage() {
 
 
                         {/* Texto inferior */}
-                        <div className="my-6 md:mt-30 lg:mt-64">
+                        <div className="my-6 md:mt-30 lg:mt-50">
                             <h3 className="text-md font-bold mb-6 md:mb-4 uppercase">What I offer</h3>
                             <p className="text-md">
                                 WebDevelopment &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; AppDevelopment &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; UIUXImplementation &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; ResponsiveInterfaces &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; FrontendLogic &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; APIIntegration &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; CleanCode &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; ScalableApps &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; RealWorldSolutions &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; ModernFrontEnd &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; ContinuousLearning
