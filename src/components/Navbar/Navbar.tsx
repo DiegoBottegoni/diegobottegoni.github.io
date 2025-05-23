@@ -79,7 +79,7 @@ const Navbar = () => {
                     <MobileMenu
                         onClose={() => setIsMobileMenuOpen(false)}
                         handleAnchorNavigation={handleAnchorNavigation}
-                        handleLanguageToggle={handleLanguageToggle}
+                    // handleLanguageToggle={handleLanguageToggle}
                     />
                 )}
             </div>
