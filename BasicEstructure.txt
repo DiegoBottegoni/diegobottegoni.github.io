@@ -1,8 +1,0 @@
-src/
-├── assets/              # imágenes, íconos, etc.
-├── components/          # Navbar, Hero, Projects, etc.
-├── pages/               # HomePage, About, Contact (si lo hacés con routing)
-├── styles/              # global.css, variables, helpers
-├── types/               # para tipar props, si hace falta
-├── App.tsx
-├── main.tsx
