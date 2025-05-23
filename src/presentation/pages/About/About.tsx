@@ -27,7 +27,7 @@ export default function AboutPage() {
 
 
                         {/* Texto inferior */}
-                        <div className="my-6 md:mt-30 lg:mt-50">
+                        <div className="my-6 md:mt-30 lg:mt-56">
                             <h3 className="text-md font-bold mb-6 md:mb-4 uppercase">What I offer</h3>
                             <p className="text-md">
                                 Web Development &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; App Development &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; UI/UX Implementation &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; Responsive Interfaces &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; Frontend Logic &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; API Integration &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; Clean Code &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; Scalable Apps &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; Modern FrontEnd &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; Continuous Learning
