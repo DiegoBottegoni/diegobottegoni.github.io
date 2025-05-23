@@ -2,11 +2,11 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 
 interface MobileMenuProps {
     onClose: () => void;
-    handleLanguageToggle: () => void;
+    // handleLanguageToggle: () => void;
     handleAnchorNavigation: (anchorId: string) => void;
 }
 
-const MobileMenu = ({ onClose, handleLanguageToggle }: MobileMenuProps) => {
+const MobileMenu = ({ onClose }: MobileMenuProps) => {
     const navigate = useNavigate();
     const location = useLocation();
 
@@ -26,7 +26,7 @@ const MobileMenu = ({ onClose, handleLanguageToggle }: MobileMenuProps) => {
             <button className="uppercase" onClick={() => handleAnchorNavigation("about")}>About</button>
             <button className="uppercase" onClick={() => handleAnchorNavigation("works")}>Works</button>
             <Link to="/contact" onClick={onClose}>Contact</Link>
-            <button className="uppercase" onClick={handleLanguageToggle}>EN / ES</button>
+            {/* <button className="uppercase" onClick={handleLanguageToggle}>EN</button> */}
         </div>
     );
 };
