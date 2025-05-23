@@ -47,7 +47,6 @@ const LogoCarousel = () => {
 
             el.scrollLeft += speed;
 
-            // Reset sin salto visual al llegar al final del primer tercio (porque está triplicado)
             if (el.scrollLeft >= el.scrollWidth / 3) {
                 el.scrollLeft = 0;
             }

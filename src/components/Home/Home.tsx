@@ -29,7 +29,7 @@ const Home = () => {
     }, [location]);
 
     return (
-        <div className="w-full overflow-x-hidden relative"> {/* relative para posicionar bien la bola */}
+        <div className="w-full overflow-x-hidden relative"> {/* relative para posicionar Drag */}
             <div className="flex flex-col h-screen">
                 <Navbar />
                 <Hero />

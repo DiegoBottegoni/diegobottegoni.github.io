@@ -36,7 +36,6 @@ export const ProjectCard = ({ img, url, github, title, text }: ProjectProps) => 
                         <button
                             onClick={() => window.open(github, "_blank")}
                             className="text-gray-900 hover:text-gray-700 transition hover:pointer-coarse::"
-                        // className="default-button "
                         >
                             <FaGithub size={20} />
                         </button>

@@ -43,27 +43,6 @@ export default function BannerTape({
             ))
         )}
       </motion.div>
-      {/* <motion.div
-        className="whitespace-nowrap flex animate-scroll py-6"
-        style={{
-          animationDirection: reverse ? "reverse" : "normal",
-        }}
-      >
-        <div className="flex gap-12">
-          <span
-            className="text-4xl md:text-5xl font-extrabold uppercase tracking-wide"
-            style={{ color: textColor }}
-            dangerouslySetInnerHTML={{ __html: text }}
-          />
-          <span
-            className="text-4xl md:text-5xl font-extrabold uppercase tracking-wide"
-            style={{ color: textColor }}
-            dangerouslySetInnerHTML={{ __html: text }}
-          />
-        </div>
-      </motion.div> */}
-
-
     </div>
   );
 }

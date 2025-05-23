@@ -4,11 +4,8 @@ export default function AboutPage() {
             <div className="max-w-6xl mx-auto flex flex-col gap-12">
                 {/* Título central */}
                 <h2 id="about" className="text-4xl font-bold text-center uppercase">About Me</h2>
-
                 {/* Contenido en dos columnas */}
-                {/* <div className="flex flex-col md:flex-row items-start gap-12"> */}
                 <div className="flex flex-col-reverse md:flex-row items-start gap-12">
-
                     {/* Textos a la izquierda */}
                     <div className="flex-1 flex flex-col justify-between h-full">
                         {/* Texto superior */}
@@ -24,21 +21,15 @@ export default function AboutPage() {
                                 It's just a matter of learning how to do things.
                             </p>
                         </div>
-
-
                         {/* Texto inferior */}
                         <div className="my-6 md:mt-30 lg:mt-56">
                             <h3 className="text-md font-bold mb-6 md:mb-4 uppercase">What I offer</h3>
                             <p className="text-md">
                                 Web Development &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; App Development &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; UI/UX Implementation &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; Responsive Interfaces &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; Frontend Logic &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; API Integration &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; Clean Code &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; Scalable Apps &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; Modern FrontEnd &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp; Continuous Learning
-
                                 {/* WebDevelopment &nbsp;·&nbsp; AppDevelopment &nbsp;·&nbsp; UIUXImplementation &nbsp;·&nbsp; ResponsiveInterfaces &nbsp;·&nbsp; FrontendLogic &nbsp;·&nbsp; APIIntegration &nbsp;·&nbsp; CleanCode &nbsp;·&nbsp; ScalableApps &nbsp;·&nbsp; ModernFrontEnd &nbsp; */}
-
-
                             </p>
                         </div>
                     </div>
-
                     {/* Imagen a la derecha */}
                     <div className="flex-1 flex justify-center items-center">
                         <img
