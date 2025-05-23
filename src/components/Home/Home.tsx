@@ -6,7 +6,7 @@ import Navbar from "../Navbar/Navbar";
 import ProjectPage from "../../presentation/components/Projects/ProjectPage";
 import AboutPage from "../../presentation/pages/About/About";
 import BannerSection from "../../presentation/pages/Banner/BannerSection";
-import PeopleTalkPage from "../../presentation/pages/PeopleTalk/PeopleTalkPage";
+// import PeopleTalkPage from "../../presentation/pages/PeopleTalk/PeopleTalkPage";
 import SkillsPage from "../../presentation/pages/Skills/SkillsPage";
 import ContactSection from "../../presentation/pages/Contact/ContactSection";
 import Footer from "../../presentation/components/Footer/Footer";
@@ -38,7 +38,7 @@ const Home = () => {
             <AboutPage />
             <BannerSection />
             <ProjectPage />
-            <PeopleTalkPage />
+            {/* <PeopleTalkPage /> */}
             <ContactSection />
             <Footer />
             <ScrollToTopButton />
