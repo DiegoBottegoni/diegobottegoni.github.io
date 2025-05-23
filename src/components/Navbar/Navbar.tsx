@@ -47,6 +47,8 @@ const Navbar = () => {
                         <Link to="/contact" className="uppercase">
                             Contact
                         </Link>
+
+
                     </li>
                     <li className="relative">
                         <button className="uppercase cursor-pointer" onClick={handleLanguageToggle}>
