@@ -20,7 +20,7 @@ const Hero = () => {
                                 key={i}
                                 initial={{ y: -24 * (i + 1), opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
-                                transition={{ delay: 0.1 * (i + 1), type: "spring", stiffness: 300 }}
+                                transition={{ delay: 0.1 * (i + 8), type: "spring", stiffness: 300 }}
                                 className="text-[clamp(3.5rem,11vw,11rem)] font-bold leading-[0.9] tracking-normal sm:tracking-[0.02em] text-outline uppercase text-center"
                             >
                                 BOTTEGONI
