@@ -32,9 +32,13 @@ const Hero = () => {
                 <motion.div
                     drag
                     dragMomentum={true}
-                    whileDrag={{ scale: 1.05, rotate: 2 }}
-                    transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                    className="relative z-10 w-32 h-44 sm:w-56 sm:h-72 -mt-6 sm:-mt-12 rounded-2xl overflow-hidden cursor-grab active:cursor-grabbing"
+                    initial={{ opacity: 0, scale: 0, borderRadius: "50%" }}
+                    animate={{ opacity: 1, scale: 1, borderRadius: "12px" }}
+                    transition={{
+                        duration: 0.4,
+                        scale: { type: "spring", visualDuration: 0.8, bounce: 0.5 },
+                    }}
+                    className="relative z-10 w-32 h-44 sm:w-56 sm:h-72 -mt-6 sm:-mt-12 overflow-hidden cursor-grab active:cursor-grabbing"
                 >
                     <img
                         src="/Profile-Dev-Img.jpg"
