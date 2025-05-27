@@ -7,7 +7,6 @@ export default function SkillsPage() {
             {/* Título centrado, con max-w */}
             <div className="max-w-6xl mx-auto px-4 text-center mb-12">
                 <motion.h2
-                    id="about"
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, ease: "easeOut" }}

@@ -19,14 +19,14 @@ export const ProjectCard = ({
     animationDirection = "left",
 }: ProjectProps) => {
 
-    const initialX = animationDirection === "left" ? -300 : 300;
+    const initialX = animationDirection === "left" ? -100 : 100;
 
     return (
         <motion.div
             initial={{ opacity: 0, x: initialX }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{
-                duration: 1.5,
+                duration: 2,
                 ease: [0.25, 0.1, 0.25, 1],
                 type: "tween",
             }}
