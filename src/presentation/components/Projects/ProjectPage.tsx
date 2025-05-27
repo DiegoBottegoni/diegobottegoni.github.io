@@ -6,7 +6,6 @@ const ProjectPage = () => {
     return (
         <section className="py-32 bg-primary-d">
             <div id="works" className="max-w-6xl mx-auto px-4 flex flex-col gap-8">
-                {/* <h2 className="text-4xl font-bold mb-12 text-center uppercase">Some projects</h2> */}
                 <motion.h2
                     id="about"
                     initial={{ opacity: 0, scale: 0.9 }}
@@ -18,8 +17,12 @@ const ProjectPage = () => {
                     Some projects
                 </motion.h2>
                 <div className="flex flex-col gap-8">
-                    {projects.map((project) => (
-                        <ProjectCard key={project.id} {...project} />
+                    {projects.map((project, index) => (
+                        <ProjectCard
+                            key={project.id}
+                            {...project}
+                            animationDirection={index % 2 === 0 ? "left" : "right"} // alterna dirección
+                        />
                     ))}
                 </div>
             </div>
