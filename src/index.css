@@ -18,6 +18,11 @@
   .font-geist {
     font-family: 'Geist', sans-serif;
   }
+  .text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+}
+
 }
 @layer base {
   :root {
