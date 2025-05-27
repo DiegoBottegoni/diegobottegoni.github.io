@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 export default function SkillsPage() {
     return (
         <section className="w-full px-0 py-24  bg-primary-l">
-            {/* Título centrado, con max-w */}
             <div className="max-w-6xl mx-auto px-4 text-center mb-12">
                 <motion.h2
                     initial={{ opacity: 0, scale: 0.9 }}

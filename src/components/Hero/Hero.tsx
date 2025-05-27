@@ -1,6 +1,8 @@
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 const Hero = () => {
+    const outlineCount = typeof window !== "undefined" && window.innerWidth < 640 ? 3 : 2;
+
     return (
         <section className="bg-primary-d flex-1 flex items-center justify-center">
             <div className="w-full max-w-6xl sm:px-16 px-6 text-center sm:pt-8 pb-8 sm:pb-16 flex flex-col items-center justify-center gap-6">
@@ -13,9 +15,9 @@ const Hero = () => {
                         BOTTEGONI
                     </h1>
 
-                    {/* Apellido contorneado repetido detrás, debajo del texto */}
+                    {/* Apellido contorneado detrás */}
                     <div className="absolute top-full mt-2 flex flex-col items-center z-0">
-                        {[...Array(2)].map((_, i) => (
+                        {[...Array(outlineCount)].map((_, i) => (
                             <motion.h1
                                 key={i}
                                 initial={{ y: -24 * (i + 1), opacity: 0 }}
@@ -43,7 +45,7 @@ const Hero = () => {
                     <img
                         src="/Profile-Dev-Img.jpg"
                         alt="Diego Bottegoni"
-                        className="w-full h-full object-cover pointer-events-none"
+                        className="w-2rem h-1rem md:w-full md:h-full object-cover pointer-events-none rounded-2xl sm:rounded-none"
                     />
                 </motion.div>
 
@@ -52,7 +54,7 @@ const Hero = () => {
                 </p>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default Hero
+export default Hero;
