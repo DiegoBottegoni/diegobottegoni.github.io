@@ -26,7 +26,7 @@ export const ProjectCard = ({
             initial={{ opacity: 0, x: initialX }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{
-                duration: 1.2,
+                duration: 1.5,
                 ease: [0.25, 0.1, 0.25, 1],
                 type: "tween",
             }}
