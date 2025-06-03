@@ -29,12 +29,12 @@ export default function BannerTape({
           animationDirection: reverse ? "reverse" : "normal",
         }}
       >
-        {[...Array(2)].flatMap(() =>
+        {[...Array(2)].flatMap((_, outerIndex) =>
           Array(10)
             .fill(text)
-            .map((t, i) => (
+            .map((t, innerIndex) => (
               <span
-                key={`${t}-${i}-${reverse ? "r" : "n"}`}
+                key={`banner-${outerIndex}-${innerIndex}`}
                 className="text-4xl md:text-5xl font-extrabold uppercase tracking-wide"
                 style={{ color: textColor }}
               >

@@ -3,6 +3,7 @@ import { ProjectCard } from "./ProjectCard";
 import { motion } from "framer-motion";
 import { useTranslation } from 'react-i18next';
 
+
 const ProjectPage = () => {
     const { t } = useTranslation();
 
