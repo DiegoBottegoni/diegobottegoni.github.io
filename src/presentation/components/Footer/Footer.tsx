@@ -1,6 +1,9 @@
 import { ArrowUpRight, Github, Linkedin } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+    const { t } = useTranslation();
+
     return (
         <footer id="footer" className="relative w-full bg-white px-6 text-sm sm:py-2">
             <div className="max-w-7xl mx-auto flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-0 relative text-center sm:text-left py-4 sm:py-10 lg:py-4">
@@ -16,7 +19,7 @@ const Footer = () => {
 
                 {/* Copyright - orden 3 en mobile, centrado absoluto en sm+ */}
                 <span className="order-3 sm:order-none sm:absolute sm:left-1/2 sm:top-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2">
-                    © {new Date().getFullYear()} Diego Bottegoni. All rights reserved.
+                    © {new Date().getFullYear()} Diego Bottegoni. {t("footer.text")}
                 </span>
 
                 {/* Íconos - orden 1 en mobile, orden natural en sm+ */}

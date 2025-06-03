@@ -1,0 +1,68 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "works": "Works",
+    "contact": "Contact"
+  },
+  "hero": {
+    "profession": "Front End Developer",
+    "location": "Based in Argentina"
+  },
+   "titles": {
+    "skills": "TECH SKILLS",
+    "about": "ABOUT ME",
+    "works": "SOME WORKS"
+  },
+   "about": {
+    "paragraph1": "Musician and nerd all my life, and now also a front-end developer. Just check my pictures — I’m rocking ‘Back to the Future’ and ‘Rick & Morty’ t-shirts! ¡Nerd alert!",
+    "paragraph2": "I jumped into Sound Engineering to mathematically understand why something sounds good or bad. Just imagine that level of nerdiness. That’s the attitude that defines me, more than as a musician or developer, as a person. It's just a matter of learning how to do things.",
+    "subtitle": "What I offer",
+    "subtitleItems": [
+      "Web Development",
+      "App Development",
+      "UI/UX Implementation",
+      "Responsive Interfaces",
+      "Frontend Logic",
+      "API Integration",
+      "Clean Code",
+      "Scalable Apps",
+      "Modern FrontEnd"
+    ]
+  },
+  "projects": {
+    "ecommerce": {
+      "title": "E-commerce",
+      "text": "A responsive e-commerce site built with React, featuring a product catalog, shopping cart, and user authentication. It integrates with a third-party API to fetch product data dynamically."
+    },
+    "colorGenerator": {
+      "title": "Color Generator",
+      "text": "A color generator app built with React, allowing users to create and save color palettes. It features a user-friendly interface and integrates with a third-party API."
+    },
+    "moreProjects": {
+      "title": "More Projects",
+      "text": "A collection of various projects built with React, showcasing different features and functionalities."
+    },
+    "button": {
+      "text": "Open project"
+    }
+  },
+  "contact": {
+    "title": "Let’s work together",
+    "text": "Whether you have a project in mind or just want to connect, I’d love to hear from you.",
+    "button": "Contact now"
+  },
+  "footer": {
+    "text": "All rights reserved."
+  },
+  "contactPage": {
+    "title": "Contact",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send Message",
+      "sending": "Sending..."
+    }
+  }
+}

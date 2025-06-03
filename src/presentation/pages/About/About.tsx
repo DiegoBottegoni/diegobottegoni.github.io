@@ -1,6 +1,11 @@
 import { motion } from "framer-motion"
+import { useTranslation } from 'react-i18next';
 
 export default function AboutPage() {
+    const { t } = useTranslation();
+    const items = t("about.subtitleItems", { returnObjects: true }) as string[];
+
+
     return (
         <section className="w-full px-4 py-24 sm:py-48 bg-primary-d text-foreground">
             <div className="max-w-6xl mx-auto flex flex-col gap-12">
@@ -13,7 +18,7 @@ export default function AboutPage() {
                     viewport={{ once: true }}
                     className="text-4xl font-bold text-center uppercase"
                 >
-                    About Me
+                    {t("titles.about")}
                 </motion.h2>
 
                 {/* Contenido en dos columnas */}
@@ -28,13 +33,9 @@ export default function AboutPage() {
                     >
                         <div className="text-xl space-y-4">
                             <p className="text-gray-900">
-                                Musician and nerd all my life, and now also a front-end developer.
-                                Just check my pictures — I’m rocking ‘Back to the Future’ and ‘Rick & Morty’ t-shirts! ¡Nerd alert!
+                                {t("about.paragraph1", { interpolation: { escapeValue: false } })}
                                 <br /><br />
-                                I jumped into Sound Engineering to mathematically understand why something sounds good or bad.
-                                Just imagine that level of nerdiness.
-                                That’s the attitude that defines me, more than as a musician or developer, as a person.
-                                It's just a matter of learning how to do things.
+                                {t("about.paragraph2", { interpolation: { escapeValue: false } })}
                             </p>
                         </div>
 
@@ -46,10 +47,17 @@ export default function AboutPage() {
                             viewport={{ once: true, amount: 0.4 }}
                             className="my-6 md:mt-30 lg:mt-50"
                         >
-                            <h3 className="text-md font-bold mb-6 md:mb-4 uppercase">What I offer</h3>
+                            <h3 className="text-md font-bold mb-6 md:mb-4 uppercase">{t("about.subtitle")}</h3>
                             <p className="text-md">
-                                Web Development&nbsp;&nbsp;·&nbsp;&nbsp;App Development&nbsp;&nbsp;·&nbsp;&nbsp;UI/UX Implementation&nbsp;&nbsp;·&nbsp;&nbsp;Responsive Interfaces&nbsp;&nbsp;·&nbsp;&nbsp;Frontend Logic&nbsp;&nbsp;·&nbsp;&nbsp;API Integration&nbsp;&nbsp;·&nbsp;&nbsp;Clean Code&nbsp;&nbsp;·&nbsp;&nbsp;Scalable Apps&nbsp;&nbsp;·&nbsp;&nbsp;Modern FrontEnd
+                                {items.map((item, i) => (
+                                    <span key={i}>
+                                        {item}
+                                        {i < items.length - 1 && <>&nbsp;&nbsp;·&nbsp;&nbsp;</>}
+                                    </span>
+                                ))}
                             </p>
+
+
                         </motion.div>
                     </motion.div>
 

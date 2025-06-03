@@ -60,32 +60,42 @@ import moreProjectsImg from "./public/more-projects.jpg"
 //   },
 // ];
 
+
 export const projects = [
   {
     id: nanoid(),
     img: ecommerceImg,
     url: "https://13-comfy-store.netlify.app/",
-    github:
-      "https://github.com/DiegoBottegoni/13-comfy-store",
-    title: "E-commerce",
-    text: "A responsive e-commerce site built with React, featuring a product catalog, shopping cart, and user authentication. It integrates with a third-party API to fetch product data dynamically. Users can browse items, filter by category, view product details, add them to their cart, and simulate a secure checkout experience.",
+    github: "https://github.com/DiegoBottegoni/13-comfy-store",
+    titleKey: "projects.ecommerce.title",
+    textKey: "projects.ecommerce.text",
   },
   {
     id: nanoid(),
     img: colorGeneratorImg,
     url: "https://009-color-generator.netlify.app/",
-    github:
-      "https://github.com/DiegoBottegoni/react-course-projects/tree/main/09-color-generator",
-    title: "color generator",
-    text: "A color generator app built with React, allowing users to create and save color palettes. It features a user-friendly interface and integrates with a third-party API for color suggestions.",
+    github: "https://github.com/DiegoBottegoni/react-course-projects/tree/main/09-color-generator",
+    titleKey: "projects.colorGenerator.title",
+    textKey: "projects.colorGenerator.text",
   },
   {
     id: nanoid(),
     img: moreProjectsImg,
     url: "https://github.com/DiegoBottegoni/react-course-projects",
-    github:
-      "https://github.com/DiegoBottegoni/react-course-projects",
-    title: "More Projects",
-    text: "A collection of various projects built with React, showcasing different features and functionalities. Each project demonstrates a unique aspect of React development, from state management to API integration.",
+    github: "https://github.com/DiegoBottegoni/react-course-projects",
+    titleKey: "projects.moreProjects.title",
+    textKey: "projects.moreProjects.text",
   },
 ];
+
+
+// "Desarrollo Web (sí, que se vea bien en el celu también)",
+// "Apps que funcionan y no explotan",
+// "Implementación de UI/UX sin dramas",
+// "Interfaces que se adaptan a cualquier pantalla",
+// "Lógica frontend con sentido común",
+// "Integración con APIs sin que duela",
+// "Código limpio y mantenible (prometido)",
+// "Apps escalables, no parches",
+// "Frontend moderno, sin cosas raras"
+

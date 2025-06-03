@@ -1,9 +1,11 @@
 import { useRef, useState } from 'react';
 import { toast } from 'sonner';
+import { useTranslation } from "react-i18next";
 
 const ContactForm = () => {
     const [loading, setLoading] = useState(false);
     const formRef = useRef<HTMLFormElement>(null);
+    const { t } = useTranslation();
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -44,20 +46,20 @@ const ContactForm = () => {
                 <input
                     type="text"
                     name="name"
-                    placeholder="Name"
+                    placeholder={t("contactPage.form.name")}
                     required
                     className="w-full border border-gray-800 rounded-4xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
                 />
                 <input
                     type="email"
                     name="email"
-                    placeholder="Email"
+                    placeholder={t("contactPage.form.email")}
                     required
                     className="w-full border border-gray-800 rounded-4xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
                 />
                 <textarea
                     name="message"
-                    placeholder="Message"
+                    placeholder={t("contactPage.form.message")}
                     rows={10}
                     required
                     className="w-full border border-gray-800 rounded-2xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black resize-none"
@@ -76,7 +78,7 @@ const ContactForm = () => {
                         // className="w-full bg-gray-900 text-white py-3 rounded-full hover:bg-gray-800 transition text-lg font-medium disabled:opacity-60"
                         className='default-button w-full md:w-1/4 rounded-4xl md:rounded-full py-4'
                     >
-                        {loading ? 'Sending...' : 'Send Message'}
+                        {loading ? t("contactPage.form.sending") : t("contactPage.form.submit")}
                     </button>
                 </div>
             </form>

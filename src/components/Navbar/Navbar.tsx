@@ -3,17 +3,20 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import MobileMenu from "../../presentation/components/Navbar/MobileMenu";
 import { LuMenu, LuX } from "react-icons/lu";
+import { useTranslation } from 'react-i18next';
+
 
 const Navbar = () => {
-    const [showTooltip, setShowTooltip] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+    const { i18n, t } = useTranslation();
 
     const navigate = useNavigate();
     const location = useLocation();
 
     const handleLanguageToggle = () => {
-        setShowTooltip(true);
-        setTimeout(() => setShowTooltip(false), 1000);
+        const newLang = i18n.language === 'es' ? 'en' : 'es';
+        i18n.changeLanguage(newLang);
     };
 
     const handleAnchorNavigation = (anchorId: string) => {
@@ -26,12 +29,17 @@ const Navbar = () => {
     };
 
     const navItems = [
-        { label: "Home", action: () => navigate("/") },
-        { label: "About", action: () => handleAnchorNavigation("about") },
-        { label: "Works", action: () => handleAnchorNavigation("works") },
-        { label: "Contact", action: () => navigate("/contact") },
-        { label: "ES", action: handleLanguageToggle, isLang: true },
+        { label: t("navbar.home"), action: () => navigate("/") },
+        { label: t("navbar.about"), action: () => handleAnchorNavigation("about") },
+        { label: t("navbar.works"), action: () => handleAnchorNavigation("works") },
+        { label: t("navbar.contact"), action: () => navigate("/contact") },
+        {
+            label: i18n.language === "es" ? "EN" : "ES",
+            action: handleLanguageToggle,
+            isLang: true,
+        },
     ];
+
 
     return (
         <nav
@@ -52,11 +60,6 @@ const Navbar = () => {
                             <button onClick={item.action} className="uppercase cursor-pointer">
                                 {item.label}
                             </button>
-                            {item.isLang && showTooltip && (
-                                <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-max px-2 py-1 rounded bg-gray-900 text-white text-xs shadow transition-opacity duration-100">
-                                    Coming soon...
-                                </div>
-                            )}
                         </motion.li>
                     ))}
                 </ul>
@@ -77,6 +80,7 @@ const Navbar = () => {
                     <MobileMenu
                         onClose={() => setIsMobileMenuOpen(false)}
                         handleAnchorNavigation={handleAnchorNavigation}
+                        handleLanguageToggle={handleLanguageToggle}
                     />
                 )}
             </div>

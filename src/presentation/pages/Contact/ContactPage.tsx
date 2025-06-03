@@ -2,9 +2,11 @@ import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import ContactForm from "../../../../src/components/ContactForm";
 import { Github, Linkedin, Mail } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 
 const ContactPage = () => {
+    const { t } = useTranslation();
     return (
         <div className="flex flex-col min-h-screen overflow-y-auto lg:overflow-hidden bg-primary-d scroll-smooth">
             {/* Navbar */}
@@ -17,7 +19,7 @@ const ContactPage = () => {
 
                     {/* Título - primero en mobile */}
                     <div className="order-1 lg:order-none lg:col-span-2 lg:col-start-1 lg:row-start-1 flex items-end">
-                        <h1 className="text-6xl font-bold pb-4 lg:pl-8">CONTACT</h1>
+                        <h1 className="text-6xl font-bold pb-4 lg:pl-8 uppercase">{t("contactPage.title")}</h1>
                     </div>
                     {/* Form - segundo en mobile */}
                     <div className="order-3 lg:order-none lg:col-span-3 lg:row-span-5 lg:col-start-3 lg:row-start-2">

@@ -1,7 +1,10 @@
 import LogoCarousel from "../../components/LogoCarousel";
 import { motion } from "framer-motion";
+import { useTranslation } from 'react-i18next';
 
 export default function SkillsPage() {
+    const { t } = useTranslation();
+
     return (
         <section className="w-full px-0 py-24  bg-primary-l">
             <div className="max-w-6xl mx-auto px-4 text-center mb-12">
@@ -12,7 +15,7 @@ export default function SkillsPage() {
                     viewport={{ once: true }}
                     className="text-4xl font-bold mb-12 text-center uppercase"
                 >
-                    Tech Skills
+                    {t("titles.skills")}
                 </motion.h2>
             </div>
 

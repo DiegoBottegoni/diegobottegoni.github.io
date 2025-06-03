@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
+    const { t } = useTranslation();
     const outlineCount = typeof window !== "undefined" && window.innerWidth < 640 ? 3 : 2;
 
     return (
@@ -50,7 +52,7 @@ const Hero = () => {
                 </motion.div>
 
                 <p className="text-sm sm:text-base font-semibold tracking-wide uppercase mt-2 cursor-default">
-                    Front End Developer <br /> Based in Argentina
+                    {t("hero.profession")} <br /> {t("hero.location")}
                 </p>
             </div>
         </section>

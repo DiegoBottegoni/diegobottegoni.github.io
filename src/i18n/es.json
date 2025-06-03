@@ -1,0 +1,69 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "works": "Trabajos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "profession": "Desarrollador Front End",
+    "location": "Ubicado en Argentina"
+  },
+  "titles": {
+    "skills": "HABILIDADES TÉCNICAS",
+    "about": "SOBRE MÍ",
+    "works": "ALGUNOS PROYECTOS"
+  },
+  "about": {
+    "paragraph1": "Músico y nerd toda mi vida, y ahora también desarrollador front-end. O sea.. mirá mis fotos! Uso remeras de ‘Volver al Futuro’ y ‘Rick & Morty’. Innegable, alto nerd.",
+    "paragraph2": "Me metí a estudiar Ingeniería en Sonido para entender matemáticamente por qué algo suena bien o mal. Sí, ese nivel de nerditud. Esa forma de ver las cosas me define más allá de ser músico o developer: soy de los que aprenden cómo hacer algo… y lo hacen.",
+    "subtitle": "Lo que te puedo ofrecer",
+    "subtitleItems": 
+    [
+      "Desarrollo Web",
+      "Desarrollo de Apps",
+      "Implementación UI/UX",
+      "Interfaces Responsivas",
+      "Lógica Frontend",
+      "Integración con APIs",
+      "Código Limpio",
+      "Apps Escalables",
+      "FrontEnd Moderno"
+    ]
+  },
+  "projects": {
+    "ecommerce": {
+      "title": "Tienda Online",
+      "text": "Una tienda online hecha con React. Catálogo, carrito, login... todo lo que esperás. Se conecta a una API para traer productos en tiempo real. Todo responsivo y funcional."
+    },
+    "colorGenerator": {
+      "title": "Generador de Colores",
+      "text": "App para crear y guardar paletas de colores. Intuitiva, rápida, y con ayuda de una API que sugiere combinaciones. Ideal para cuando el cliente dice “quiero algo más vibrante”."
+    },
+    "moreProjects": {
+      "title": "Más Proyectos",
+      "text": "Otros proyectos que fui haciendo con React. Desde ideas simples hasta experimentos raros, pero todos con algo para mostrar."
+    },
+    "button": {
+      "text": "Abrir proyecto"
+    }
+  },
+  "contact": {
+  "title": "Trabajemos juntos",
+  "text": "Ya sea que tengas un proyecto en mente o simplemente quieras conectar, me encantaría saber de vos.",
+  "button": "Contactar ahora"
+},
+  "footer": {
+  "text": "Todos los derechos reservados."
+},
+"contactPage": {
+    "title": "Contacto",
+    "form": {
+      "name": "Nombre",
+      "email": "Email",
+      "message": "Mensaje",
+      "submit": "Enviar Mensaje",
+      "sending": "Enviando..."
+    }
+  }
+}
