@@ -1,46 +1,68 @@
-import { frame, motion, useSpring } from "motion/react"
-import { useEffect, useRef } from "react"
-import type { RefObject } from "react"
+import { motion, useSpring } from "motion/react"
+import { useEffect, useState } from "react"
 
+const spring = { damping: 30, stiffness: 5000, restDelta: 0.001 }
 
 export default function Drag() {
-    const ref = useRef<HTMLDivElement>(null)
-    const { x, y } = useFollowPointer(ref)
+    const [initialPos, setInitialPos] = useState<{ x: number; y: number } | null>(null)
+    const [isVisible, setIsVisible] = useState(true)
 
-    return <motion.div ref={ref} style={{ ...ball, x, y }} />
-}
-
-const spring = { damping: 10, stiffness: 200, restDelta: 0.001 }
-
-
-export function useFollowPointer(ref: RefObject<HTMLDivElement | null>) {
-    const x = useSpring(0, spring)
-    const y = useSpring(0, spring)
+    const x = useSpring(initialPos ? initialPos.x : 0, spring)
+    const y = useSpring(initialPos ? initialPos.y : 0, spring)
 
     useEffect(() => {
-        if (!ref.current) return
+        const handlePointerMove = (event: MouseEvent) => {
+            if (!initialPos) {
+                setInitialPos({ x: event.clientX, y: event.clientY })
+            }
+            x.set(event.clientX)
+            y.set(event.clientY)
+            setIsVisible(true)
+        }
 
-        const handlePointerMove = ({ clientX, clientY }: MouseEvent) => {
-            const element = ref.current!
+        const handleMouseOut = (event: MouseEvent) => {
+            // Si relatedTarget es null, el mouse salió de la ventana del navegador
+            if (!event.relatedTarget) {
+                setIsVisible(false)
+            }
+        }
 
-            frame.read(() => {
-                x.set(clientX - element.offsetLeft - element.offsetWidth / 2)
-                y.set(clientY - element.offsetTop - element.offsetHeight / 2)
-            })
+        const handleMouseEnter = () => {
+            setIsVisible(true)
         }
 
         window.addEventListener("pointermove", handlePointerMove)
+        window.addEventListener("mouseout", handleMouseOut)
+        window.addEventListener("mouseenter", handleMouseEnter)
 
-        return () =>
+        return () => {
             window.removeEventListener("pointermove", handlePointerMove)
-    }, [])
+            window.removeEventListener("mouseout", handleMouseOut)
+            window.removeEventListener("mouseenter", handleMouseEnter)
+        }
+    }, [x, y, initialPos])
 
-    return { x, y }
-}
+    return (
+        <>
+            <style>{`* { cursor: none !important; }`}</style>
 
-const ball = {
-    width: 10,
-    height: 10,
-    backgroundColor: "#000000",
-    borderRadius: "50%",
+            {isVisible && (
+                <motion.div
+                    style={{
+                        position: "fixed",
+                        top: y,
+                        left: x,
+                        width: 10,
+                        height: 10,
+                        borderRadius: "50%",
+                        backgroundColor: "#1a202c",
+                        pointerEvents: "none",
+                        translateX: "-50%",
+                        translateY: "-50%",
+                        zIndex: 9999,
+                    }}
+                />
+            )}
+        </>
+    )
 }

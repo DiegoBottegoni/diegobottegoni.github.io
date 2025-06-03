@@ -11,7 +11,7 @@ const Hero = () => {
 
                 <div className="relative flex justify-center w-full items-center flex-col">
                     {/* Texto principal al frente */}
-                    <h1 className="relative z-10 text-[clamp(3.5rem,11vw,11rem)] font-bold leading-[0.9] tracking-normal sm:tracking-[0.02em] text-black text-center uppercase cursor-default">
+                    <h1 className="relative z-10 text-[clamp(3.5rem,11vw,11rem)] font-bold leading-[0.9] tracking-normal sm:tracking-[0.02em] text-center uppercase cursor-default">
                         DIEGO
                         <br />
                         BOTTEGONI
@@ -25,7 +25,7 @@ const Hero = () => {
                                 initial={{ y: -24 * (i + 1), opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ delay: 0.1 * (i + 8), type: "spring", stiffness: 300 }}
-                                className="text-[clamp(3.5rem,11vw,11rem)] font-bold leading-[0.9] tracking-normal sm:tracking-[0.02em] text-outline uppercase text-center"
+                                className="text-[clamp(3.5rem,11vw,11rem)] font-bold leading-[0.9] tracking-normal text-gray-900 sm:tracking-[0.02em] text-outline uppercase text-center"
                             >
                                 BOTTEGONI
                             </motion.h1>

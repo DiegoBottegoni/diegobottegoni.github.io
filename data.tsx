@@ -1,7 +1,7 @@
 import { nanoid } from "nanoid";
-import ecommerceImg from "./public/ecommerce-img.jpg"
-import colorGeneratorImg from "./public/color-generator.jpg"
-import moreProjectsImg from "./public/more-projects.jpg"
+// import ecommerceImg from "./public/ecommerce-img.jpg"
+// import colorGeneratorImg from "./public/color-generator.jpg"
+// import moreProjectsImg from "./public/more-projects.jpg"
 
 // export const skills = [
 //   {
@@ -64,7 +64,7 @@ import moreProjectsImg from "./public/more-projects.jpg"
 export const projects = [
   {
     id: nanoid(),
-    img: ecommerceImg,
+    img: "/ecommerce-img.jpg",
     url: "https://13-comfy-store.netlify.app/",
     github: "https://github.com/DiegoBottegoni/13-comfy-store",
     titleKey: "projects.ecommerce.title",
@@ -72,7 +72,7 @@ export const projects = [
   },
   {
     id: nanoid(),
-    img: colorGeneratorImg,
+    img: "/color-generator.jpg",
     url: "https://009-color-generator.netlify.app/",
     github: "https://github.com/DiegoBottegoni/react-course-projects/tree/main/09-color-generator",
     titleKey: "projects.colorGenerator.title",
@@ -80,7 +80,7 @@ export const projects = [
   },
   {
     id: nanoid(),
-    img: moreProjectsImg,
+    img: "/more-projects.jpg",
     url: "https://github.com/DiegoBottegoni/react-course-projects",
     github: "https://github.com/DiegoBottegoni/react-course-projects",
     titleKey: "projects.moreProjects.title",
