@@ -48,6 +48,7 @@ export default function Drag() {
 
             {isVisible && (
                 <motion.div
+                    className="hidden md:block"
                     style={{
                         position: "fixed",
                         top: y,

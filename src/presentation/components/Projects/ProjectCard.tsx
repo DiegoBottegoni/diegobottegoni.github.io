@@ -90,7 +90,7 @@ const cardVariants = (direction: number): Variants => ({
     },
     onscreen: {
         y: 0,
-        rotate: -4 * direction,
+        rotate: -2 * direction,
         opacity: 1,
         transition: {
             type: "spring",
