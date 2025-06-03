@@ -12,7 +12,7 @@ const ContactSection = () => {
 
     return (
         <section className="w-full bg-primary-l py-42 md:py-52 text-center px-4">
-            <h1 className="text-6xl md:text-8xl font-semibold mb-6 py-2 font-stretch w-full uppercase">
+            <h1 className="text-5xl md:text-8xl font-semibold mb-6 py-2 font-stretch w-full uppercase">
                 {t("contact.title")}
             </h1>
             <p className="text-lg md:text-xl mb-8 max-w-xl mx-auto">
