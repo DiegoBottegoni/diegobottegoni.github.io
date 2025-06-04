@@ -33,7 +33,7 @@
   },
   "projects": {
     "ecommerce": {
-      "title": "Tienda Online",
+      "title": "E-commerce",
       "text": "Una tienda online hecha con React. Catálogo, carrito, login... todo lo que esperás. Se conecta a una API para traer productos en tiempo real. Todo responsivo y funcional."
     },
     "colorGenerator": {
@@ -42,7 +42,7 @@
     },
     "moreProjects": {
       "title": "Más Proyectos",
-      "text": "Otros proyectos que fui haciendo con React. Desde ideas simples hasta experimentos raros, pero todos con algo para mostrar."
+      "text": "Otros proyectos que fui haciendo con React. Desde ideas simples hasta experimentos raros, pero todos me enseñaron algo."
     },
     "button": {
       "text1": "Abrir proyecto",
@@ -51,8 +51,8 @@
   },
   "contact": {
   "title": "Trabajemos juntos",
-  "text": "Ya sea que tengas un proyecto en mente o simplemente quieras conectar, me encantaría saber de vos.",
-  "button": "Contactar ahora"
+  "text": "Ya sea que tengas un proyecto en mente o simplemente quieras conectar, escribime!.",
+  "button": "Contactame ahora"
 },
   "footer": {
   "text": "Todos los derechos reservados."
