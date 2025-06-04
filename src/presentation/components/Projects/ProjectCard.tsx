@@ -69,7 +69,7 @@ export const ProjectCard = ({
                     <div className="flex items-center gap-4 pt-2">
                         <button
                             onClick={() => window.open(url, "_blank")}
-                            className="default-button rounded-full"
+                            className="default-button rounded-full -mr-2"
                         >
                             {t("projects.button.text1")}
                         </button>
