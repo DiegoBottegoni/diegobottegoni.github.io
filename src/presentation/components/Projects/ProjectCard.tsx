@@ -79,12 +79,7 @@ export const ProjectCard = ({
                         >
                             {t("projects.button.text2")}
                         </button>
-                        {/* <button
-                            onClick={() => window.open(github, "_blank")}
-                            className="text-gray-900 hover:text-gray-700 transition"
-                        >
-                            <FaGithub size={20} />
-                        </button> */}
+
                     </div>
                 </div>
             </motion.div>
