@@ -44,7 +44,8 @@
       "text": "A collection of various projects built with React, showcasing different features and functionalities."
     },
     "button": {
-      "text": "Open project"
+      "text1": "Open project",
+      "text2": "View code"
     }
   },
   "contact": {

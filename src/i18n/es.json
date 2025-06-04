@@ -45,7 +45,8 @@
       "text": "Otros proyectos que fui haciendo con React. Desde ideas simples hasta experimentos raros, pero todos con algo para mostrar."
     },
     "button": {
-      "text": "Abrir proyecto"
+      "text1": "Abrir proyecto",
+      "text2": "Ver código"
     }
   },
   "contact": {
