@@ -1,7 +1,7 @@
 import { motion, useSpring } from "motion/react"
 import { useEffect, useState } from "react"
 
-const spring = { damping: 30, stiffness: 5000, restDelta: 0.001 }
+const spring = { damping: 60, stiffness: 5000, restDelta: 0.001 }
 
 export default function Drag() {
     const [initialPos, setInitialPos] = useState<{ x: number; y: number } | null>(null)
@@ -53,10 +53,10 @@ export default function Drag() {
                         position: "fixed",
                         top: y,
                         left: x,
-                        width: 20,
-                        height: 20,
+                        width: 28,
+                        height: 28,
                         borderRadius: "50%",
-                        backgroundColor: "#374151",
+                        backgroundColor: "#6B7280",
                         pointerEvents: "none",
                         translateX: "-50%",
                         translateY: "-50%",
