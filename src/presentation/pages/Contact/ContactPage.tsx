@@ -63,7 +63,7 @@ const ContactPage = () => {
                 </div>
             </main>
             {/* Footer */}
-            <div className="fixed bottom-0 left-0 w-full z-50 bg-white shadow pb-4">
+            <div className="fixed bottom-0 left-0 w-full z-50 bg-white shadow">
                 <Footer />
             </div>
         </div>
