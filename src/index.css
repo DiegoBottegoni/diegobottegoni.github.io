@@ -91,4 +91,5 @@ html, body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   cursor: none;
+  font-weight: 300;
 }
