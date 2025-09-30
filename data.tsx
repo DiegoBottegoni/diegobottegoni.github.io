@@ -2,7 +2,7 @@ import { nanoid } from "nanoid";
 // import ecommerceImg from "./public/ecommerce-img.jpg"
 // import colorGeneratorImg from "./public/color-generator.jpg"
 // import moreProjectsImg from "./public/more-projects.jpg"
-
+//
 // export const skills = [
 //   {
 //     id: nanoid(),
