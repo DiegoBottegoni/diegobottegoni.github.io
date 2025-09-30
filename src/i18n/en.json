@@ -6,7 +6,7 @@
     "contact": "Contact"
   },
   "hero": {
-    "profession": "Front End Developer",
+    "profession": "Full Stack Developer",
     "location": "Based in Argentina"
   },
    "titles": {
@@ -15,7 +15,7 @@
     "works": "SOME WORKS"
   },
    "about": {
-    "paragraph1": "Musician and nerd all my life, and now also a front-end developer. Just check my pictures — I’m rocking ‘Back to the Future’ and ‘Rick & Morty’ t-shirts! ¡Nerd alert!",
+    "paragraph1": "Musician and nerd all my life, and now also a full stack developer. Just check my pictures — I’m rocking ‘Back to the Future’ and ‘Rick & Morty’ t-shirts! ¡Nerd alert!",
     "paragraph2": "I jumped into Sound Engineering to mathematically understand why something sounds good or bad. Just imagine that level of nerdiness. That’s the attitude that defines me, more than as a musician or developer, as a person. It's just a matter of learning how to do things.",
     "subtitle": "What I offer",
     "subtitleItems": [
@@ -24,6 +24,7 @@
       "UI/UX Implementation",
       "Responsive Interfaces",
       "Frontend Logic",
+      "Backend Logic",
       "API Integration",
       "Clean Code",
       "Scalable Apps",
