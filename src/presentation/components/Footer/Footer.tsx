@@ -13,7 +13,7 @@ const Footer = () => {
                     href="mailto:diego@example.com"
                     className="order-2 sm:order-none inline-flex items-center gap-1 justify-center sm:justify-start font-semibold"
                 >
-                    diego.bottegoni@gmail.com
+                    dev.diegobottegoni@gmail.com
                     <ArrowUpRight size={16} />
                 </a>
 
