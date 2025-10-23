@@ -12,7 +12,7 @@ export default function AboutPage() {
 
 
     return (
-        <section className="w-full px-4 py-24 sm:py-48 bg-primary-d text-foreground">
+        <section className="w-full px-4 pb-24 sm:pb-48 pt-18 sm:pt-28 bg-primary-d text-foreground">
             <div className="max-w-6xl mx-auto flex flex-col gap-12">
                 {/* Título animado */}
                 <motion.h2
