@@ -1,28 +1,25 @@
 import { useEffect, useRef } from "react";
 import {
-    FaGithub,
-    FaHtml5,
-    FaJs,
-    FaNode,
-    FaReact,
+    FaNode
 } from "react-icons/fa";
-import { BiLogoTypescript } from "react-icons/bi";
-import { SiMongodb, SiTailwindcss } from "react-icons/si";
+import { SiPostgresql, SiTailwindcss, SiPrisma, SiRedux, SiNextdotjs, SiTypescript, SiJavascript, SiGithub, SiReact } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 
 const skillsData = [
-    { id: 1, icon: <FaGithub className="text-8xl" /> },
-    { id: 2, icon: <FaHtml5 className="text-8xl" /> },
-    { id: 3, icon: <FaJs className="text-8xl" /> },
-    { id: 4, icon: <FaNode className="text-8xl" /> },
-    { id: 5, icon: <FaReact className="text-8xl" /> },
-    { id: 6, icon: <BiLogoTypescript className="text-8xl" /> },
-    { id: 7, icon: <SiMongodb className="text-8xl" /> },
+    { id: 1, icon: <SiGithub className="text-8xl" /> },
+    { id: 2, icon: <SiJavascript className="text-8xl" /> },
+    { id: 3, icon: <SiTypescript className="text-8xl" /> },
+    { id: 4, icon: <SiReact className="text-8xl" /> },
+    { id: 5, icon: <FaNode className="text-8xl" /> },
+    { id: 6, icon: <SiPostgresql className="text-8xl" /> },
+    { id: 7, icon: <SiPrisma className="text-8xl" /> },
     { id: 8, icon: <SiTailwindcss className="text-8xl" /> },
     { id: 9, icon: <TbApi className="text-8xl" /> },
+    { id: 10, icon: <SiRedux className="text-8xl" /> },
+    { id: 11, icon: <SiNextdotjs className="text-8xl" /> },
 ];
 
-// Triplicamos para efecto infinito
+
 const duplicatedSkills = [...skillsData, ...skillsData, ...skillsData];
 
 const LogoCarousel = () => {

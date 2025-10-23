@@ -88,14 +88,3 @@ export const projects = [
   },
 ];
 
-
-// "Desarrollo Web (sí, que se vea bien en el celu también)",
-// "Apps que funcionan y no explotan",
-// "Implementación de UI/UX sin dramas",
-// "Interfaces que se adaptan a cualquier pantalla",
-// "Lógica frontend con sentido común",
-// "Integración con APIs sin que duela",
-// "Código limpio y mantenible (prometido)",
-// "Apps escalables, no parches",
-// "Frontend moderno, sin cosas raras"
-
