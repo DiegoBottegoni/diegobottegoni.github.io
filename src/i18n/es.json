@@ -30,20 +30,7 @@
   "TypeScript y React",
   "Node.js y Prisma",
   "Prácticas de Desarrollo Modernas"
-],
-
-    "subtitleItems2": [
-      "Desarrollo Web",
-      "Desarrollo de Apps",
-      "Implementación UI/UX",
-      "Interfaces Responsivas",
-      "Lógica Frontend",
-      "Lógica Backend",
-      "Integración con APIs",
-      "Código Limpio",
-      "Apps Escalables",
-      "FrontEnd Moderno"
-    ]
+]
   },
   "projects": {
     "ecommerce": {

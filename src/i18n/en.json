@@ -30,20 +30,7 @@
   "TypeScript & React",
   "Node.js & Prisma",
   "Modern Development Practices"
-],
-
-    "subtitleItems2": [
-      "Web Development",
-      "App Development",
-      "UI/UX Implementation",
-      "Responsive Interfaces",
-      "Frontend Logic",
-      "Backend Logic",
-      "API Integration",
-      "Clean Code",
-      "Scalable Apps",
-      "Modern FrontEnd"
-    ]
+]
   },
   "projects": {
     "ecommerce": {
