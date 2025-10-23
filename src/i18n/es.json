@@ -15,11 +15,24 @@
     "works": "ALGUNOS PROYECTOS"
   },
   "about": {
-    "paragraph1": "Músico y nerd toda mi vida, y ahora también desarrollador full stack. O sea... mirá mis fotos! Uso remeras de ‘Volver al Futuro’ y ‘Rick & Morty’. Innegable, alto nerd.",
-    "paragraph2": "Me metí a estudiar Ingeniería en Sonido para entender matemáticamente por qué algo suena bien o mal. Sí, ese nivel de nerditud. Esa forma de ver las cosas me define más allá de ser músico o developer: soy de los que aprenden cómo hacer algo… y lo hacen.",
+    "paragraph1": "Músico y nerd de toda la vida — y ahora Desarrollador Web Full-Stack.",
+    "paragraph2": "Empecé en Ingeniería de Sonido intentando entender por qué algo suena bien o mal.",
+    "paragraph3": "Esa misma curiosidad por comprender cómo funcionan las cosas me llevó al código — donde la lógica se encuentra con la creatividad y cada desafío se convierte en una oportunidad para construir algo nuevo.",
     "subtitle": "Lo que te puedo ofrecer",
-    "subtitleItems": 
-    [
+    "subtitleItems": [
+  "Desarrollo Web Full-Stack",
+  "Arquitectura Frontend",
+  "Lógica Backend",
+  "Integración con APIs",
+  "Código Limpio y Escalable",
+  "Implementación UI/UX",
+  "Interfaces Responsivas",
+  "TypeScript y React",
+  "Node.js y Prisma",
+  "Prácticas de Desarrollo Modernas"
+],
+
+    "subtitleItems2": [
       "Desarrollo Web",
       "Desarrollo de Apps",
       "Implementación UI/UX",

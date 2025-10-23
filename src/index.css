@@ -5,6 +5,17 @@
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
 
+@theme {
+  --breakpoint-xs: 30rem;   /* 480px extra pequeño */
+  --breakpoint-xsl: 35rem;   /* punto medio ~ 560px (35rem) */
+  --breakpoint-sm: 40rem;   /* 640px = 40rem */
+  --breakpoint-sml: 44rem;   /* punto medio ~ 700px (44rem) */
+  --breakpoint-md: 48rem;   /* 768px */
+  --breakpoint-mdl: 56rem;  /* punto medio ~ 900px (56rem) */
+  --breakpoint-lg: 64rem;   /* 1024px */
+  --breakpoint-xl: 80rem;   /* 1280px */
+}
+
 
 @layer utilities {
   .scrollbar-hide {

@@ -15,10 +15,24 @@
     "works": "SOME WORKS"
   },
    "about": {
-    "paragraph1": "Musician and nerd all my life, and now also a full stack developer. Just check my pictures — I’m rocking ‘Back to the Future’ and ‘Rick & Morty’ t-shirts! ¡Nerd alert!",
-    "paragraph2": "I jumped into Sound Engineering to mathematically understand why something sounds good or bad. Just imagine that level of nerdiness. That’s the attitude that defines me, more than as a musician or developer, as a person. It's just a matter of learning how to do things.",
+    "paragraph1": "Musician and nerd all my life — and now a Full-Stack Web Developer.",
+"paragraph2": "I started in Sound Engineering, trying to understand why things sound good or bad.",
+"paragraph3": "That same curiosity to understand how things work led me to code — where logic meets creativity, and every challenge becomes a chance to build something new.",
     "subtitle": "What I offer",
     "subtitleItems": [
+  "Full-Stack Web Development",
+  "Frontend Architecture",
+  "Backend Logic",
+  "API Integration",
+  "Clean & Scalable Code",
+  "UI/UX Implementation",
+  "Responsive Interfaces",
+  "TypeScript & React",
+  "Node.js & Prisma",
+  "Modern Development Practices"
+],
+
+    "subtitleItems2": [
       "Web Development",
       "App Development",
       "UI/UX Implementation",
