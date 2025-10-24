@@ -7,34 +7,35 @@
 
 @theme {
   --breakpoint-xs: 30rem;   /* 480px extra pequeño */
-  --breakpoint-xsl: 35rem;   /* punto medio ~ 560px (35rem) */
+  --breakpoint-xsl: 35rem;  /* punto medio ~ 560px (35rem) */
   --breakpoint-sm: 40rem;   /* 640px = 40rem */
-  --breakpoint-sml: 44rem;   /* punto medio ~ 700px (44rem) */
+  --breakpoint-sml: 44rem;  /* punto medio ~ 700px (44rem) */
   --breakpoint-md: 48rem;   /* 768px */
   --breakpoint-mdl: 56rem;  /* punto medio ~ 900px (56rem) */
   --breakpoint-lg: 64rem;   /* 1024px */
   --breakpoint-xl: 80rem;   /* 1280px */
 }
 
-
 @layer utilities {
   .scrollbar-hide {
     -ms-overflow-style: none;  /* Ocultar barra en IE y Edge */
-    scrollbar-width: none;  /* Ocultar barra en Firefox */
+    scrollbar-width: none;     /* Ocultar barra en Firefox */
   }
 
   .scrollbar-hide::-webkit-scrollbar {
     display: none;  /* Ocultar barra en Chrome, Safari y Opera */
   }
+
   .font-geist {
     font-family: 'Geist', sans-serif;
   }
+
   .text-outline {
-  color: transparent;
-  -webkit-text-stroke: 1px black;
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+  }
 }
 
-}
 @layer base {
   :root {
     --font-geist: 'Geist', sans-serif;
@@ -43,8 +44,8 @@
   body {
     font-family: var(--font-geist);
     color: #1a202c; /* Tailwind's text-gray-900 */
-    cursor: none;
   }
+
   .bg-primary-d {
     background-color: #EDEDEC;
   }
@@ -52,6 +53,7 @@
   .bg-primary-l {
     background-color: #F4F4F3;
   }
+
   button.default-button {
     display: inline-block;
     padding-left: 1rem;
@@ -64,12 +66,13 @@
     border-radius: 0.375rem;
     transition: background-color 0.2s;
   }
+
   button.default-button:hover {
     background-color: #374151;
   }
 }
 
-
+/* Animación scroll horizontal */
 @keyframes scroll {
   0% {
     transform: translateX(0%);
@@ -90,6 +93,7 @@
     animation: scroll 40s linear infinite;
   }
 }
+
 /* Pantallas grandes en adelante: más lento */
 @media (min-width: 1024px) {
   .animate-scroll {
@@ -97,10 +101,15 @@
   }
 }
 
-
 html, body {
   scroll-behavior: smooth;
   overflow-x: hidden;
-  cursor: none;
   font-weight: 300;
+}
+
+/* ✅ Ocultar cursor solo en desktop */
+@media (min-width: 640px) {
+  html, body {
+    cursor: none;
+  }
 }
