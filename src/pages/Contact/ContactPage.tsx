@@ -1,6 +1,6 @@
-import Navbar from "../../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
-import ContactForm from "../../../../src/components/ContactForm";
+import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
+import ContactForm from "@/components/ContactForm";
 import { Github, Linkedin, Mail } from "lucide-react";
 import { useTranslation } from "react-i18next";
 

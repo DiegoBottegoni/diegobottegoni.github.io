@@ -5,7 +5,7 @@ const Footer = () => {
     const { t } = useTranslation();
 
     return (
-        <footer id="footer" className="relative w-full bg-white px-6 text-sm py-4">
+        <footer id="footer" className="relative w-full bg-white px-6 text-sm py-4 lg:py-0">
             <div
                 className="
           max-w-7xl mx-auto

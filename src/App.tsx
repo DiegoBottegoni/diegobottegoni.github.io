@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "./components/Home/Home";
-import ContactPage from "./presentation/pages/Contact/ContactPage";
+import Home from "@/components/Home/Home";
+import ContactPage from "@/pages/Contact/ContactPage";
 import { Toaster } from 'sonner';
-import ScrollToTop from "./components/ScrollToTop";
-import Drag from "./presentation/components/Drag";
+import ScrollToTop from "@/components/ScrollToTop";
+import Drag from "@/components/Drag";
 
 
 function App() {

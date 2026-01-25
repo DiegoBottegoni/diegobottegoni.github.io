@@ -1,7 +1,7 @@
 import { useNavigate, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import MobileMenu from "../../presentation/components/Navbar/MobileMenu";
+import MobileMenu from "./MobileMenu";
 import { LuMenu, LuX } from "react-icons/lu";
 import { useTranslation } from 'react-i18next';
 

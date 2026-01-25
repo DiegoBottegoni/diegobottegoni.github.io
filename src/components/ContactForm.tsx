@@ -1,40 +1,11 @@
-import { useRef, useState } from 'react';
-import { toast } from 'sonner';
+import { useRef } from 'react';
 import { useTranslation } from "react-i18next";
+import { useContactForm } from "@/hooks/useContactForm";
 
 const ContactForm = () => {
-    const [loading, setLoading] = useState(false);
-    const formRef = useRef<HTMLFormElement>(null);
     const { t } = useTranslation();
-
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        setLoading(true);
-
-        const form = e.currentTarget;
-        const formData = new FormData(form);
-
-        try {
-            const res = await fetch('https://formsubmit.co/dev.diegobottegoni@gmail.com', {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    Accept: 'application/json',
-                },
-            });
-
-            if (res.ok) {
-                toast.success('Thanks for your message!');
-                form.reset();
-            } else {
-                toast.error('Oops! Something went wrong. Try again later.');
-            }
-        } catch (error) {
-            toast.error('Network error. Please try again later.' + error);
-        } finally {
-            setLoading(false);
-        }
-    };
+    const { loading, handleSubmit } = useContactForm();
+    const formRef = useRef<HTMLFormElement>(null);
 
     return (
         <div className="bg-primary-d w-full pr-8">

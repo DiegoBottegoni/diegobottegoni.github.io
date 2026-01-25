@@ -1,4 +1,4 @@
-import { projects } from "../../../../data";
+import { projects } from "@/data";
 import { ProjectCard } from "./ProjectCard";
 import { useTranslation } from 'react-i18next';
 
@@ -15,7 +15,7 @@ const ProjectPage = () => {
                     {t("titles.works")}
                 </h2>
                 <div className="flex flex-col gap-8">
-                    {projects.map((project, index) => (
+                    {projects.map((project: any, index: number) => (
                         <ProjectCard
                             key={project.id}
                             {...project}
