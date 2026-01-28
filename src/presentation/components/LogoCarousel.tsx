@@ -2,21 +2,28 @@
 import {
     FaNode
 } from "react-icons/fa";
-import { SiPostgresql, SiTailwindcss, SiPrisma, SiRedux, SiNextdotjs, SiTypescript, SiJavascript, SiGithub, SiReact } from "react-icons/si";
-import { TbApi } from "react-icons/tb";
+import { SiPostgresql, SiTailwindcss, SiPrisma, SiRedux, SiNextdotjs, SiTypescript, SiJavascript, SiReact, SiExpress, SiDocker } from "react-icons/si";
 
 const skillsData = [
-    { id: 1, icon: <SiGithub className="text-8xl" /> },
-    { id: 2, icon: <SiJavascript className="text-8xl" /> },
-    { id: 3, icon: <SiTypescript className="text-8xl" /> },
-    { id: 4, icon: <SiReact className="text-8xl" /> },
-    { id: 5, icon: <FaNode className="text-8xl" /> },
-    { id: 6, icon: <SiPostgresql className="text-8xl" /> },
-    { id: 7, icon: <SiPrisma className="text-8xl" /> },
-    { id: 8, icon: <SiTailwindcss className="text-8xl" /> },
-    { id: 9, icon: <TbApi className="text-8xl" /> },
-    { id: 10, icon: <SiRedux className="text-8xl" /> },
-    { id: 11, icon: <SiNextdotjs className="text-8xl" /> },
+    { id: 1, icon: <SiJavascript className="text-8xl" /> },
+    { id: 2, icon: <SiTypescript className="text-8xl" /> },
+
+    // Frontend core
+    { id: 3, icon: <SiReact className="text-8xl" /> },
+    { id: 4, icon: <SiNextdotjs className="text-8xl" /> },
+    { id: 5, icon: <SiTailwindcss className="text-8xl" /> },
+    { id: 6, icon: <SiRedux className="text-8xl" /> },
+
+    // Backend
+    { id: 7, icon: <FaNode className="text-8xl" /> },
+    { id: 8, icon: <SiExpress className="text-8xl" /> },
+
+    // Data
+    { id: 9, icon: <SiPostgresql className="text-8xl" /> },
+    { id: 10, icon: <SiPrisma className="text-8xl" /> },
+
+    // Infra
+    { id: 11, icon: <SiDocker className="text-8xl" /> },
 ];
 
 
