@@ -6,7 +6,7 @@ export default function BannerSection() {
             {/* Cinta de arriba: negra con letras blancas */}
             <BannerTape
                 text="FULL-STACK DEVELOPER &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp; SUPER NERD &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp; CLEAN CODE ENTHUSIAST &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp; SUPER NERD &nbsp;&nbsp;&nbsp;/"
-                backgroundColor="#000000"
+                backgroundColor="#111827"
                 textColor="#FFFFFF"
                 angle={-3}
             />
@@ -15,7 +15,7 @@ export default function BannerSection() {
             <BannerTape
                 text="BUILDING COOL STUFF &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp; TYPESCRIPT LOVER &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp; REACT & NODE ENJOYER &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp; TYPESCRIPT LOVER &nbsp;&nbsp;&nbsp;/"
                 backgroundColor="#FFFFFF"
-                textColor="#000000"
+                textColor="#111827"
                 angle={3}
                 reverse
             />

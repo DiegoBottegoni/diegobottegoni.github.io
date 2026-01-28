@@ -57,7 +57,7 @@ const LogoCarousel = () => {
     }, []);
 
     return (
-        <div className="w-full overflow-hidden py-6 text-black">
+        <div className="w-full overflow-hidden py-6 text-gray-900">
             <div
                 ref={scrollRef}
                 className="flex gap-24 sm:gap-32 md:gap-48 overflow-x-auto scrollbar-hide px-8"
