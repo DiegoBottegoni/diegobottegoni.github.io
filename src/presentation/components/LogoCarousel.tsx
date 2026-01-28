@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+
 import {
     FaNode
 } from "react-icons/fa";
@@ -20,57 +20,27 @@ const skillsData = [
 ];
 
 
-const duplicatedSkills = [...skillsData, ...skillsData, ...skillsData];
+    const duplicatedSkills = [...skillsData, ...skillsData, ...skillsData];
 
 const LogoCarousel = () => {
-    const scrollRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const el = scrollRef.current;
-        if (!el) return;
-
-        let animationFrameId: number;
-        let speed = 1; // default desktop speed
-
-        const screenWidth = window.innerWidth;
-        if (screenWidth < 768) {
-            speed = 1.5;
-        } else if (screenWidth < 1024) {
-            speed = 1.2;
-        }
-
-        const scroll = () => {
-            if (!el) return;
-
-            el.scrollLeft += speed;
-
-            if (el.scrollLeft >= el.scrollWidth / 3) {
-                el.scrollLeft = 0;
-            }
-
-            animationFrameId = requestAnimationFrame(scroll);
-        };
-
-        animationFrameId = requestAnimationFrame(scroll);
-
-        return () => cancelAnimationFrame(animationFrameId);
-    }, []);
 
     return (
-        <div className="w-full overflow-hidden py-6 text-gray-900">
-            <div
-                ref={scrollRef}
-                className="flex gap-24 sm:gap-32 md:gap-48 overflow-x-auto scrollbar-hide px-8"
-            >
-                {duplicatedSkills.map((skill, index) => (
-                    <div
-                        key={`${skill.id}-${index}`}
-                        className="h-24 w-24 flex-shrink-0 flex items-center justify-center"
-                    >
-                        {skill.icon}
-                    </div>
-                ))}
-            </div>
+        <div className="w-full overflow-hidden py-6 text-gray-900 flex select-none">
+            {[...Array(2)].map((_, i) => (
+                <div
+                    key={i}
+                    className="flex shrink-0 animate-scroll-tech gap-24 sm:gap-32 md:gap-48 items-center min-w-full px-12"
+                >
+                    {duplicatedSkills.map((skill, index) => (
+                        <div
+                            key={`${skill.id}-${index}`}
+                            className="h-24 w-24 flex-shrink-0 flex items-center justify-center"
+                        >
+                            {skill.icon}
+                        </div>
+                    ))}
+                </div>
+            ))}
         </div>
     );
 };

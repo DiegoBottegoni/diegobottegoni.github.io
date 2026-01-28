@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+
 
 interface BannerTapeProps {
   text: string;
@@ -17,32 +17,33 @@ export default function BannerTape({
 }: BannerTapeProps) {
   return (
     <div
-      className="overflow-hidden w-full"
+      className="overflow-hidden w-full flex select-none"
       style={{
         backgroundColor,
         transform: `rotate(${angle}deg)`,
       }}
     >
-      <motion.div
-        className="whitespace-nowrap flex gap-12 animate-scroll py-6"
-        style={{
-          animationDirection: reverse ? "reverse" : "normal",
-        }}
-      >
-        {[...Array(2)].flatMap((_, outerIndex) =>
-          Array(10)
+      {[...Array(2)].map((_, i) => (
+        <div
+          key={i}
+          className="flex shrink-0 animate-scroll-banner items-center min-w-full justify-around gap-12 py-6"
+          style={{
+            animationDirection: reverse ? "reverse" : "normal",
+          }}
+        >
+          {Array(10)
             .fill(text)
-            .map((t, innerIndex) => (
+            .map((t, index) => (
               <span
-                key={`banner-${outerIndex}-${innerIndex}`}
-                className="text-4xl md:text-5xl font-extrabold uppercase tracking-wide"
+                key={index}
+                className="text-4xl md:text-5xl font-extrabold uppercase tracking-wide whitespace-nowrap"
                 style={{ color: textColor }}
               >
                 {t}
               </span>
-            ))
-        )}
-      </motion.div>
+            ))}
+        </div>
+      ))}
     </div>
   );
 }
