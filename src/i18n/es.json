@@ -6,8 +6,8 @@
     "contact": "Contacto"
   },
   "hero": {
-    "profession": "Desarrollador Full Stack",
-    "location": "Ubicado en Argentina"
+    "profession": "Desarrollador Frontend",
+    "location": "React · TypeScript · Node.js"
   },
   "titles": {
     "skills": "HABILIDADES TÉCNICAS",
@@ -15,35 +15,34 @@
     "works": "ALGUNOS PROYECTOS"
   },
   "about": {
-    "paragraph1": "Músico y nerd de toda la vida — y ahora Desarrollador Web Full-Stack.",
-    "paragraph2": "Empecé en Ingeniería de Sonido intentando entender por qué algo suena bien o mal.",
-    "paragraph3": "Esa misma curiosidad por comprender cómo funcionan las cosas me llevó al código — donde la lógica se encuentra con la creatividad y cada desafío se convierte en una oportunidad para construir algo nuevo.",
+    "paragraph1": "Desarrollador Frontend enfocado en la construcción de aplicaciones web orientadas al usuario, escalables y mantenibles.",
+    "paragraph2": "Trabajo con especial atención a la arquitectura basada en componentes, la reutilización de código y una separación clara de responsabilidades.",
+    "paragraph3": "Cuento con experiencia utilizando React y TypeScript, y con background en Node.js y sistemas basados en APIs, lo que me permite comprender el flujo completo entre frontend y backend y colaborar de forma efectiva dentro de equipos de producto y desarrollo.",
     "subtitle": "Lo que te puedo ofrecer",
     "subtitleItems": [
-  "Desarrollo Web Full-Stack",
   "Arquitectura Frontend",
-  "Lógica Backend",
+  "Desarrollo basado en componentes",
   "Integración con APIs",
   "Código Limpio y Escalable",
-  "Implementación UI/UX",
-  "Interfaces Responsivas",
-  "TypeScript y React",
-  "Node.js y Prisma",
+  "Implementación de interfaces",
+  "Diseño responsive",
+  "React y TypeScript",
+  "Node.js y APIs REST",
   "Prácticas de Desarrollo Modernas"
 ]
   },
   "projects": {
     "ecommerce": {
       "title": "E-commerce",
-      "text": "Una tienda online hecha con React. Catálogo, carrito, login... todo lo que esperás. Se conecta a una API para traer productos en tiempo real. Todo responsivo y funcional."
+      "text": "Aplicación e-commerce responsive desarrollada con React, que incluye catálogo de productos, carrito de compras y autenticación de usuarios. Integra una API de terceros para obtener y mostrar los datos de forma dinámica."
     },
     "colorGenerator": {
       "title": "Generador de Colores",
-      "text": "App para crear y guardar paletas de colores. Intuitiva, rápida, y con ayuda de una API que sugiere combinaciones. Ideal para cuando el cliente dice “quiero algo más vibrante”."
+      "text": "Aplicación generadora de colores desarrollada con React, que permite crear y guardar paletas de colores. Cuenta con una interfaz simple e intuitiva e integra una API de terceros."
     },
     "moreProjects": {
       "title": "Más Proyectos",
-      "text": "Otros proyectos que fui haciendo con React. Desde ideas simples hasta experimentos raros, pero todos me enseñaron algo."
+      "text": "Una colección de proyectos desarrollados con React que muestran distintas funcionalidades y enfoques de implementación."
     },
     "button": {
       "text1": "Abrir proyecto",

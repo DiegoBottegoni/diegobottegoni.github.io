@@ -51,7 +51,7 @@ const Hero = () => {
                     />
                 </motion.div>
 
-                <p className="text-sm sm:text-base font-semibold tracking-wide uppercase mt-2 cursor-default">
+                <p className="text-sm sm:text-base font-semibold tracking-wide uppercase mt-2 cursor-default lg:mt-8">
                     {t("hero.profession")} <br /> {t("hero.location")}
                 </p>
             </div>

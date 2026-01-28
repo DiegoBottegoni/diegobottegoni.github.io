@@ -6,8 +6,8 @@
     "contact": "Contact"
   },
   "hero": {
-    "profession": "Full Stack Developer",
-    "location": "Based in Argentina"
+    "profession": "Frontend Software Developer",
+    "location": "React · TypeScript · Node.js"
   },
    "titles": {
     "skills": "TECH SKILLS",
@@ -15,35 +15,34 @@
     "works": "SOME WORKS"
   },
    "about": {
-    "paragraph1": "Musician and nerd all my life — and now a Full-Stack Web Developer.",
-"paragraph2": "I started in Sound Engineering, trying to understand why things sound good or bad.",
-"paragraph3": "That same curiosity to understand how things work led me to code — where logic meets creativity, and every challenge becomes a chance to build something new.",
+    "paragraph1": "Frontend Software Developer focused on building scalable and maintainable user-facing web applications.",
+    "paragraph2": "I work with a strong emphasis on component-based architecture, code reusability, and clear separation of responsibilities.",
+    "paragraph3": "With experience using React and TypeScript, and a background in Node.js and API-driven systems, I understand the full interaction between frontend and backend, allowing me to collaborate effectively within product and engineering teams.",
     "subtitle": "What I offer",
     "subtitleItems": [
-  "Full-Stack Web Development",
   "Frontend Architecture",
-  "Backend Logic",
+  "Component-Based Development",
   "API Integration",
   "Clean & Scalable Code",
   "UI/UX Implementation",
   "Responsive Interfaces",
-  "TypeScript & React",
-  "Node.js & Prisma",
+  "React & TypeScript",
+  "Node.js & REST APIs",
   "Modern Development Practices"
 ]
   },
   "projects": {
     "ecommerce": {
       "title": "E-commerce",
-      "text": "A responsive e-commerce site built with React, featuring a product catalog, shopping cart, and user authentication. It integrates with a third-party API to fetch product data dynamically."
+      "text": "A responsive e-commerce application built with React, featuring a product catalog, shopping cart, and user authentication. It integrates with a third-party API to dynamically fetch and display product data."
     },
     "colorGenerator": {
       "title": "Color Generator",
-      "text": "A color generator app built with React, allowing users to create and save color palettes. It features a user-friendly interface and integrates with a third-party API."
+      "text": "A color generator application built with React that allows users to create and save color palettes. It features a simple and user-friendly interface and integrates with a third-party API."
     },
     "moreProjects": {
       "title": "More Projects",
-      "text": "A collection of various projects built with React, showcasing different features and functionalities."
+      "text": "A collection of React projects showcasing different features, functionalities, and implementation approaches."
     },
     "button": {
       "text1": "Open project",
