@@ -1,6 +1,6 @@
-import { useNavigate, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import MobileMenu from "../../presentation/components/Navbar/MobileMenu";
 import { LuMenu, LuX } from "react-icons/lu";
 import { useTranslation } from 'react-i18next';
@@ -11,32 +11,19 @@ const Navbar = () => {
 
     const { i18n, t } = useTranslation();
 
-    const navigate = useNavigate();
-    const location = useLocation();
-
     const handleLanguageToggle = () => {
         const newLang = i18n.language === 'es' ? 'en' : 'es';
         i18n.changeLanguage(newLang);
     };
 
-    const handleAnchorNavigation = (anchorId: string) => {
-        if (location.pathname !== "/") {
-            navigate("/", { state: { scrollTo: anchorId } });
-        } else {
-            const el = document.getElementById(anchorId);
-            if (el) el.scrollIntoView({ behavior: "smooth" });
-        }
-    };
-
-    const navItems = [
-        { label: t("navbar.home"), action: () => navigate("/") },
-        { label: t("navbar.about"), action: () => handleAnchorNavigation("about") },
-        { label: t("navbar.works"), action: () => handleAnchorNavigation("works") },
-        { label: t("navbar.contact"), action: () => navigate("/contact") },
+    const navItems: Array<{ label: string; to?: string; action?: () => void }> = [
+        { label: t("navbar.home"), to: "/" },
+        { label: t("navbar.about"), to: "/#about" },
+        { label: t("navbar.works"), to: "/#works" },
+        { label: t("navbar.contact"), to: "/contact" },
         {
             label: i18n.language === "es" ? "EN" : "ES",
             action: handleLanguageToggle,
-            isLang: true,
         },
     ];
 
@@ -57,9 +44,15 @@ const Navbar = () => {
                             transition={{ delay: 0.2 + index * 0.1, duration: 0.3 }}
                             className="relative"
                         >
-                            <button onClick={item.action} className="uppercase cursor-pointer">
-                                {item.label}
-                            </button>
+                            {item.to ? (
+                                <Link to={item.to} className="uppercase cursor-pointer">
+                                    {item.label}
+                                </Link>
+                            ) : (
+                                <button type="button" onClick={item.action} className="uppercase cursor-pointer">
+                                    {item.label}
+                                </button>
+                            )}
                         </motion.li>
                     ))}
                 </ul>
@@ -79,7 +72,6 @@ const Navbar = () => {
                 {isMobileMenuOpen && (
                     <MobileMenu
                         onClose={() => setIsMobileMenuOpen(false)}
-                        handleAnchorNavigation={handleAnchorNavigation}
                         handleLanguageToggle={handleLanguageToggle}
                     />
                 )}

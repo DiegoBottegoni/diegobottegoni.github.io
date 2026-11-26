@@ -50,8 +50,9 @@
     background-color: #F4F4F3;
   }
 
-  button.default-button {
+  .default-button {
     display: inline-block;
+    text-decoration: none;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 0.5rem;
@@ -63,7 +64,7 @@
     transition: background-color 0.2s;
   }
 
-  button.default-button:hover {
+  .default-button:hover {
     background-color: #374151;
   }
 }

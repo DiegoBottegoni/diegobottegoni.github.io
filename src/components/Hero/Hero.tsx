@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
@@ -18,9 +18,9 @@ const Hero = () => {
                     </h1>
 
                     {/* Apellido contorneado detrás */}
-                    <div className="absolute top-full mt-2 flex flex-col items-center z-0">
+                    <div className="absolute top-full mt-2 flex flex-col items-center z-0" aria-hidden="true">
                         {[...Array(outlineCount)].map((_, i) => (
-                            <motion.h1
+                            <motion.p
                                 key={i}
                                 initial={{ y: -24 * (i + 1), opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
@@ -28,7 +28,7 @@ const Hero = () => {
                                 className="text-[clamp(3.5rem,11vw,11rem)] font-bold leading-[0.9] tracking-normal text-gray-900 sm:tracking-[0.02em] text-outline uppercase text-center"
                             >
                                 BOTTEGONI
-                            </motion.h1>
+                            </motion.p>
                         ))}
                     </div>
                 </div>
@@ -47,7 +47,7 @@ const Hero = () => {
                     <img
                         src="/Profile-Dev-Img.jpg"
                         alt="Diego Bottegoni"
-                        className="w-2rem h-1rem md:w-full md:h-full object-cover pointer-events-none rounded-2xl sm:rounded-none"
+                        className="h-full w-full object-cover pointer-events-none rounded-2xl sm:rounded-none"
                     />
                 </motion.div>
 

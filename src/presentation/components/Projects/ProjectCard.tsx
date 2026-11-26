@@ -1,7 +1,6 @@
-import { motion } from "framer-motion";
-// import { FaGithub } from "react-icons/fa";
+import { motion } from "motion/react";
 import { useTranslation } from "react-i18next";
-import type { Variants } from "framer-motion";
+import type { Variants } from "motion/react";
 
 type ProjectProps = {
     img: string;
@@ -67,18 +66,22 @@ export const ProjectCard = ({
                         <p className="text-sm mt-4">{t(textKey)}</p>
                     </div>
                     <div className="flex items-center gap-4 pt-2">
-                        <button
-                            onClick={() => window.open(url, "_blank")}
+                        <a
+                            href={url}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="default-button rounded-full -mr-2"
                         >
                             {t("projects.button.text1")}
-                        </button>
-                        <button
-                            onClick={() => window.open(github, "_blank")}
+                        </a>
+                        <a
+                            href={github}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="default-button rounded-full"
                         >
                             {t("projects.button.text2")}
-                        </button>
+                        </a>
 
                     </div>
                 </div>

@@ -16,14 +16,14 @@ const Home = () => {
     const location = useLocation();
 
     useEffect(() => {
-        if (location.state?.scrollTo) {
-            const el = document.getElementById(location.state.scrollTo);
-            if (el) {
-                setTimeout(() => {
-                    el.scrollIntoView({ behavior: "smooth" });
-                }, 100);
-            }
-        }
+        const id = location.hash.replace("#", "") || location.state?.scrollTo;
+        if (!id) return;
+        const el = document.getElementById(id);
+        if (!el) return;
+        const timer = window.setTimeout(() => {
+            el.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+        return () => window.clearTimeout(timer);
     }, [location]);
 
     return (
