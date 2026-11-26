@@ -38,7 +38,7 @@ export default function AboutPage() {
     "
 >
     <img
-        src="/about-img.jpeg"
+        src="/about-img.webp"
         alt="Diego Bottegoni"
         className="
             w-full h-full
@@ -122,7 +122,7 @@ export default function AboutPage() {
 //                 className="h-80 mdl:h-auto order-1 mdl:order-2"
 //             >
 //                 <img
-//                     src="/about-img.jpeg"
+//                     src="/about-img.webp"
 //                     alt="Diego Bottegoni"
 //                     className="rounded-2xl w-full h-full object-cover shadow-lg"
 //                 />

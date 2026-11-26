@@ -45,7 +45,7 @@ const Hero = () => {
                     className="relative z-10 w-32 h-44 sm:w-56 sm:h-72 -mt-6 sm:-mt-12 overflow-hidden cursor-grab active:cursor-grabbing"
                 >
                     <img
-                        src="/Profile-Dev-Img.jpg"
+                        src="/Profile-Dev-Img.webp"
                         alt="Diego Bottegoni"
                         className="h-full w-full object-cover pointer-events-none rounded-2xl sm:rounded-none"
                     />
