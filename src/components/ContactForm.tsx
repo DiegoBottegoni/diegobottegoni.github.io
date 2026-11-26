@@ -14,23 +14,37 @@ const ContactForm = () => {
         const form = e.currentTarget;
         const formData = new FormData(form);
 
+        const payload: Record<string, string> = {
+            name: String(formData.get('name') ?? ''),
+            email: String(formData.get('email') ?? ''),
+            message: String(formData.get('message') ?? ''),
+            _captcha: 'false',
+        };
+        const honey = formData.get('_honey');
+        if (typeof honey === 'string' && honey.length > 0) {
+            payload._honey = honey;
+        }
+
         try {
-            const res = await fetch('https://formsubmit.co/dev.diegobottegoni@gmail.com', {
+            const res = await fetch('https://formsubmit.co/ajax/dev.diegobottegoni@gmail.com', {
                 method: 'POST',
-                body: formData,
                 headers: {
+                    'Content-Type': 'application/json',
                     Accept: 'application/json',
                 },
+                body: JSON.stringify(payload),
             });
 
-            if (res.ok) {
+            const data = await res.json().catch(() => null) as { success?: string; message?: string } | null;
+
+            if (res.ok && data?.success === 'true') {
                 toast.success('Thanks for your message!');
                 form.reset();
             } else {
-                toast.error('Oops! Something went wrong. Try again later.');
+                toast.error(data?.message || 'Oops! Something went wrong. Try again later.');
             }
-        } catch (error) {
-            toast.error('Network error. Please try again later.' + error);
+        } catch {
+            toast.error('Network error. Please try again later.');
         } finally {
             setLoading(false);
         }
