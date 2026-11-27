@@ -15,9 +15,9 @@
     "works": "ALGUNOS PROYECTOS"
   },
   "about": {
-    "paragraph1": "Desarrollador Full Stack enfocado en la construcción de aplicaciones web orientadas al usuario, escalables y mantenibles.",
-    "paragraph2": "Trabajo con especial atención a la arquitectura basada en componentes, la reutilización de código y una separación clara de responsabilidades.",
-    "paragraph3": "Cuento con experiencia utilizando React y TypeScript, Node.js y sistemas basados en APIs, lo que me permite comprender el flujo completo entre frontend y backend y colaborar de forma efectiva dentro de equipos de producto y desarrollo.",
+    "paragraph1": "Desarrollador Full Stack con experiencia en la construcción y evolución de aplicaciones web y sistemas orientados a procesos de negocio.",
+    "paragraph2": "Trabajo en el desarrollo de soluciones end-to-end, combinando arquitectura de software, interfaces, APIs e integraciones entre servicios. Priorizo la organización del código, la seguridad y la mantenibilidad de las aplicaciones.",
+    "paragraph3": "Cuento con experiencia en React, Next.js, TypeScript y Node.js, desarrollando tanto funcionalidades para usuarios como herramientas de gestión interna. Me interesa construir soluciones prácticas, bien estructuradas y preparadas para evolucionar, trabajando en colaboración con equipos de producto y desarrollo.",
     "subtitle": "Lo que te puedo ofrecer",
     "subtitleItems": [
       "Arquitectura Full Stack",
