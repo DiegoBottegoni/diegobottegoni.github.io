@@ -15,9 +15,9 @@
     "works": "SOME WORKS"
   },
   "about": {
-    "paragraph1": "Full Stack Software Developer focused on building scalable and maintainable user-facing web applications.",
-    "paragraph2": "I work with a strong emphasis on component-based architecture, code reusability, and clear separation of responsibilities.",
-    "paragraph3": "With experience using React and TypeScript, Node.js and API-driven systems, I understand the full interaction between frontend and backend, allowing me to collaborate effectively within product and engineering teams.",
+    "paragraph1": "Full Stack Developer with experience building and evolving web applications and systems designed around business processes.",
+    "paragraph2": "I work on end-to-end solutions, combining software architecture, user interfaces, APIs, and service integrations. I prioritize code organization, security, and application maintainability.",
+    "paragraph3": "I have experience with React, Next.js, TypeScript, and Node.js, developing both user-facing features and internal management tools. I aim to build practical, well-structured solutions that are ready to evolve, while collaborating with product and engineering teams.",
     "subtitle": "What I offer",
     "subtitleItems": [
       "Full Stack Architecture",
