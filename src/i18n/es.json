@@ -6,8 +6,8 @@
     "contact": "Contacto"
   },
   "hero": {
-    "profession": "Desarrollador Frontend",
-    "location": "React · TypeScript · Node.js"
+    "profession": "Desarrollador Full Stack",
+    "location": "React · Next.js · TypeScript · Node.js · APIs"
   },
   "titles": {
     "skills": "HABILIDADES TÉCNICAS",
@@ -15,21 +15,21 @@
     "works": "ALGUNOS PROYECTOS"
   },
   "about": {
-    "paragraph1": "Desarrollador Frontend enfocado en la construcción de aplicaciones web orientadas al usuario, escalables y mantenibles.",
+    "paragraph1": "Desarrollador Full Stack enfocado en la construcción de aplicaciones web orientadas al usuario, escalables y mantenibles.",
     "paragraph2": "Trabajo con especial atención a la arquitectura basada en componentes, la reutilización de código y una separación clara de responsabilidades.",
-    "paragraph3": "Cuento con experiencia utilizando React y TypeScript, y con background en Node.js y sistemas basados en APIs, lo que me permite comprender el flujo completo entre frontend y backend y colaborar de forma efectiva dentro de equipos de producto y desarrollo.",
+    "paragraph3": "Cuento con experiencia utilizando React y TypeScript, Node.js y sistemas basados en APIs, lo que me permite comprender el flujo completo entre frontend y backend y colaborar de forma efectiva dentro de equipos de producto y desarrollo.",
     "subtitle": "Lo que te puedo ofrecer",
     "subtitleItems": [
-  "Arquitectura Frontend",
-  "Desarrollo basado en componentes",
-  "Integración con APIs",
-  "Código Limpio y Escalable",
-  "Implementación de interfaces",
-  "Diseño responsive",
-  "React y TypeScript",
-  "Node.js y APIs REST",
-  "Prácticas de Desarrollo Modernas"
-]
+      "Arquitectura Full Stack",
+      "Desarrollo basado en componentes",
+      "Integración con APIs",
+      "Código Limpio y Escalable",
+      "Implementación de interfaces",
+      "Diseño responsive",
+      "React y TypeScript",
+      "Node.js y APIs REST",
+      "Prácticas de Desarrollo Modernas"
+    ]
   },
   "projects": {
     "ecommerce": {
@@ -50,14 +50,14 @@
     }
   },
   "contact": {
-  "title": "Trabajemos juntos",
-  "text": "Ya sea que tengas un proyecto en mente o simplemente quieras conectar, escribime!.",
-  "button": "Contactame ahora"
-},
+    "title": "Trabajemos juntos",
+    "text": "Ya sea que tengas un proyecto en mente o simplemente quieras conectar, escribime!.",
+    "button": "Contactame ahora"
+  },
   "footer": {
-  "text": "Todos los derechos reservados."
-},
-"contactPage": {
+    "text": "Todos los derechos reservados."
+  },
+  "contactPage": {
     "title": "Contacto",
     "form": {
       "name": "Nombre",

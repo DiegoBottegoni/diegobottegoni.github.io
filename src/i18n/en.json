@@ -6,30 +6,30 @@
     "contact": "Contact"
   },
   "hero": {
-    "profession": "Frontend Software Developer",
-    "location": "React · TypeScript · Node.js"
+    "profession": "Full Stack Software Developer",
+    "location": "React · Next.js · TypeScript · Node.js · APIs"
   },
-   "titles": {
+  "titles": {
     "skills": "TECH SKILLS",
     "about": "ABOUT ME",
     "works": "SOME WORKS"
   },
-   "about": {
-    "paragraph1": "Frontend Software Developer focused on building scalable and maintainable user-facing web applications.",
+  "about": {
+    "paragraph1": "Full Stack Software Developer focused on building scalable and maintainable user-facing web applications.",
     "paragraph2": "I work with a strong emphasis on component-based architecture, code reusability, and clear separation of responsibilities.",
-    "paragraph3": "With experience using React and TypeScript, and a background in Node.js and API-driven systems, I understand the full interaction between frontend and backend, allowing me to collaborate effectively within product and engineering teams.",
+    "paragraph3": "With experience using React and TypeScript, Node.js and API-driven systems, I understand the full interaction between frontend and backend, allowing me to collaborate effectively within product and engineering teams.",
     "subtitle": "What I offer",
     "subtitleItems": [
-  "Frontend Architecture",
-  "Component-Based Development",
-  "API Integration",
-  "Clean & Scalable Code",
-  "UI/UX Implementation",
-  "Responsive Interfaces",
-  "React & TypeScript",
-  "Node.js & REST APIs",
-  "Modern Development Practices"
-]
+      "Full Stack Architecture",
+      "Component-Based Development",
+      "API Integration",
+      "Clean & Scalable Code",
+      "UI/UX Implementation",
+      "Responsive Interfaces",
+      "React & TypeScript",
+      "Node.js & REST APIs",
+      "Modern Development Practices"
+    ]
   },
   "projects": {
     "ecommerce": {
